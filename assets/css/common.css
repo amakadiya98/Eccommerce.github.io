@@ -524,7 +524,7 @@ li {
 }
 
 .sub-input-box img {
-  width: 100%;
+  width: 85%;
 }
 
 .sub-input-box input {
@@ -535,9 +535,10 @@ li {
   background-color: transparent;
   padding-left: 20px;
   position: absolute;
-  left: 3%;
-  top: 12%;
-  width: 94%;
+  left: 5%;
+  top: 7%;
+  width: 78%;
+  font-size: 35px;
 }
 
 .sub-input-select {
@@ -1198,4 +1199,49 @@ li {
   .footer-section .info-part .company-details {
     gap: 15px;
   }
+}
+.main-block .custom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+
+/* product banner */
+.common-banner-section{
+  height: 320px;
+  background-size: cover;
+}
+.common-banner-section.productList{
+  background-image: url('../images/banner/productBanner.png');
+}
+.common-banner-section .banner-content{
+  background-color: #00000099;
+  padding: 24px;
+  text-align: center;
+}
+.common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.common-banner-section .banner-content .breadcrumb .breadcrumb-item a{
+  color: #AEABAB;
+  text-decoration: none;
+}
+.common-banner-section .banner-content h2{
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 700;
+}
+.common-banner-section .banner-content p{
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 40%;
+    margin: auto;
+    margin-top: 16px;
 }
