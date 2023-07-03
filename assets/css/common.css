@@ -64,6 +64,7 @@ b {
 
 .header-section {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
 }
 .header-section .logo {
   width: 285px;
@@ -270,6 +271,9 @@ b {
   display: none;
 }
 
+.show {
+  display: block;
+}
 .header-section .mobile-search {
   display: none;
   background-color: transparent;
@@ -360,9 +364,7 @@ b {
   top: 100%;
   z-index: 100;
 }
-/* .menu-active {
-  color: var(--primary-color);
-} */
+
 .menu-modal {
   left: 0;
   padding-left: 50px;
@@ -387,23 +389,30 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.menu-modal ul.modal-ul li p {
+  color: #28a5d8;
+}
+.menu-modal .modal-ul li:hover,
+.menu-modal .modal-ul li p:hover {
   color: #36c5ff;
 }
-
 .menu-modal-two {
   left: 400px;
-  background-color: #e6e6e6;
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   top: 0;
 }
 
 .common-title h2 {
   font-size: 25px;
+  color: #393939;
 }
 
 .common-title h3 {
   font-size: 18px;
   margin-top: 2rem;
+  color: #393939;
 }
 
 .common-title ul {
@@ -422,8 +431,12 @@ li {
   font-weight: 500;
   color: #393939;
 }
-.menu-modal-two li.menu-active {
-  color: var(--primary-color);
+
+.menu-modal-two .submenu li.submenu-list p {
+  color: #393939;
+}
+.menu-modal-two .submenu li.submenu-list p:hover {
+  color: #36c5ff;
 }
 .common-title div {
   display: flex;
@@ -438,7 +451,7 @@ li {
 
 .menu-modal-three {
   left: 400px;
-  background-color: #cac8c8;
+  background: rgba(255, 255, 255, 0.8);
   padding: 30px;
   top: 0;
   display: flex;
@@ -463,6 +476,13 @@ li {
   cursor: pointer;
 }
 
+.menu-modal-three .subsubmenu li.subsub-menu-list .subsub-menu-link {
+  text-decoration: none;
+  color: #393939;
+}
+.menu-modal-three .subsubmenu li.subsub-menu-list .subsub-menu-link:hover {
+  color: #28a5d8;
+}
 /* ------- Menu modal section css end ------- */
 
 /* ------- section section css start ------- */
@@ -597,7 +617,6 @@ li {
 }
 
 /* ------- section section css end ------- */
-
 
 /* ------- footer section css start ------- */
 
@@ -850,7 +869,190 @@ li {
   background-color: white;
 }
 
+/* ------- footer section css end ------- */
+
+/* ------section common heading css ------ */
+
+.main-block .custom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.main-block .section-heading-block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-block .section-heading-block .section-heading-text {
+  color: #1e1c1c;
+  text-align: center;
+  font-size: 50px;
+  font-family: Ubuntu;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-block .section-heading-block .head-text-underline {
+  display: flex;
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+  height: 5px;
+  background-color: var(--primary-color);
+}
+
+/* ----- section common heading css end ----- */
+/* ------ commom recommended section css start ----- */
+.main-block .common-recommended-section {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #fff;
+}
+.main-block .common-recommended-section .custom-container {
+  gap: 100px;
+}
+.common-recommended-section .list-block {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 35px;
+  position: relative;
+}
+.product-list-card {
+  background-color: #393939;
+  border-radius: 8px;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+.product-list-card .ribbon {
+  position: absolute;
+  background-color: #ff9d42;
+  right: -39px;
+  transform: rotate(45deg);
+  top: 24px;
+  width: 150px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: capitalize;
+  padding: 6px 0;
+}
+.product-list-card .ribbon.highstock {
+  background-color: #119d51;
+}
+.product-list-card .image-part img {
+  width: 100%;
+}
+.product-list-card .product-info-body {
+  padding: 20px 14px;
+}
+.product-list-card .product-info-body p {
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.5%;
+  text-transform: capitalize;
+}
+.product-list-card .product-info-body h6 {
+  font-size: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+.product-list-card .product-add-btn {
+  width: 100%;
+  text-align: center;
+  color: #28a5d8;
+  font-size: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: capitalize;
+  padding: 15px;
+  border: 1px solid #28a5d8;
+  cursor: pointer;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.product-list-card:hover {
+  color: #fff;
+}
+.product-list-card:hover .product-add-btn {
+  background-color: #28a5d8;
+  color: #fff;
+}
+.product-list-card.slider-product {
+  background-color: #fff;
+  color: #393939;
+}
+.product-list-card.slider-product:hover {
+  color: #393939;
+}
+.product-list-card.slider-product .product-add-btn {
+  background-color: #28a5d8;
+  color: #fff;
+}
+.product-list-card:hover .product-add-btn img {
+  display: initial;
+}
+.common-recommended-section .list-block .owl-carousel .owl-item img {
+  all: unset;
+}
+.common-recommended-section .list-block .owl-theme .owl-nav.disabled{
+  display: block;
+}
+.common-recommended-section .list-block .owl-theme .owl-nav [class*='owl-'] {
+  transition: all .3s ease;
+}
+.common-recommended-section .list-block .owl-theme {
+  position: relative;
+}
+.common-recommended-section .list-block .owl-theme .owl-next, .common-recommended-section .list-block .owl-theme .owl-prev {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 45%;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+.common-recommended-section .list-block .owl-theme .owl-prev {
+  left: -45px;
+}
+.common-recommended-section .list-block .owl-theme .owl-next {
+  right: -45px; 
+}
+/* ------ commom recommended section css end ----- */
+
 @media screen and (max-width: 1600px) {
+  .common-recommended-section .list-block {
+    width: 95%;
+  }
+  .common-recommended-section .list-block .owl-theme .owl-prev {
+    left: -55px;
+  }
+  .common-recommended-section .list-block .owl-theme .owl-next {
+    right: -55px; 
+  }
   .footer-section .top-part .content-part .product-part .category-heading {
     font-size: 22px;
   }
@@ -876,6 +1078,21 @@ li {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .main-block .section-heading-block .section-heading-text {
+    font-size: 42px;
+  }
+
+  .main-block .section-heading-block .head-text-underline {
+    width: 12%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main-block .section-heading-block .section-heading-text {
+    font-size: 36px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .footer-section .top-part .content-part .product-part .category-heading {
     font-size: 20px;
@@ -1026,6 +1243,10 @@ li {
 }
 
 @media screen and (max-width: 992px) {
+  .main-block .section-heading-block .section-heading-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
   .footer-section .top-part .logo-part .logo {
     width: 35%;
   }
@@ -1151,6 +1372,17 @@ li {
 }
 
 @media screen and (max-width: 576px) {
+  .main-block .section-heading-block .section-heading-text {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .main-block .section-heading-block {
+    gap: 10px;
+  }
+  .main-block .section-heading-block .head-text-underline {
+    width: 18%;
+    height: 3px;
+  }
   .footer-section .top-part .content-part .col-sm-6 {
     justify-content: flex-start;
   }
@@ -1208,40 +1440,39 @@ li {
   margin: 0 auto;
 }
 
-
 /* product banner */
-.common-banner-section{
+.common-banner-section {
   height: 320px;
   background-size: cover;
 }
-.common-banner-section.productList{
-  background-image: url('../images/banner/productBanner.png');
+.common-banner-section.productList {
+  background-image: url("../images/banner/productBanner.png");
 }
-.common-banner-section .banner-content{
+.common-banner-section .banner-content {
   background-color: #00000099;
   padding: 24px;
   text-align: center;
 }
-.common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+.common-banner-section .banner-content .breadcrumb .breadcrumb-item {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
 }
-.common-banner-section .banner-content .breadcrumb .breadcrumb-item a{
-  color: #AEABAB;
+.common-banner-section .banner-content .breadcrumb .breadcrumb-item a {
+  color: #aeabab;
   text-decoration: none;
 }
-.common-banner-section .banner-content h2{
-  color: #FFF;
+.common-banner-section .banner-content h2 {
+  color: #fff;
   font-size: 50px;
   font-weight: 700;
 }
-.common-banner-section .banner-content p{
-  color: #FFF;
+.common-banner-section .banner-content p {
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   max-width: 40%;
-    margin: auto;
-    margin-top: 16px;
+  margin: auto;
+  margin-top: 16px;
 }

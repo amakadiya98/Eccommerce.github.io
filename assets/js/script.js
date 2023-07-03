@@ -20,22 +20,24 @@ closeButton.addEventListener("click", () => {
     menuModal.classList.add("hide");
 });
 
-menuModalLI.forEach((li) => {
-    li.addEventListener("click", () => {
-        menuModalTwo.classList.remove("hide");
-    });
-});
+// menuModalLI.forEach((li) => {
+//     li.addEventListener("click", () => {
+//         menuModalTwo.classList.remove("hide");
+//     });
+// });
 
-menuModalTwoButton.addEventListener("click", () => {
-    menuModalTwo.classList.add("hide");
-});
+// menuModalTwoButton.addEventListener("click", () => {
+//     menuModalTwo.classList.add("hide");
+// });
 
-menuModalTwoLi.forEach((li) => {
-    li.addEventListener("click", () => {
-        menuModalThree.classList.remove("hide");
-    });
-});
+// menuModalTwoLi.forEach((li) => {
+//     li.addEventListener("click", () => {
+//         menuModalThree.classList.remove("hide");
+//     });
+// });
 
-menuModalThreeButton.addEventListener("click", () => {
-    menuModalThree.classList.add("hide");
-});
+// menuModalThreeButton.addEventListener("click", () => {
+//     menuModalThree.classList.add("hide");
+// });
+
+

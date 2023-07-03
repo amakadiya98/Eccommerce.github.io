@@ -196,3 +196,6 @@
 .product-list-card:hover .product-add-btn img {
     display: initial;
 }
+.main-block .product-list .custom-container {
+    padding-bottom: 3rem;
+} 
