@@ -34,7 +34,18 @@
   font-weight: 400;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --primary-color: #28a5d8;
   --secondary-color: #2b2f2f;
@@ -1195,26 +1206,236 @@ span.divider {
   }
 }
 @media (max-width: 906px) {
-  .sub-header-mobile .primary-btn{
+  .sub-header-mobile .primary-btn {
     font-size: 16px;
   }
-  .sub-header-mobile .mobile-sub-second, .sub-header-mobile .mobile-sub-first{
+  .sub-header-mobile .mobile-sub-second,
+  .sub-header-mobile .mobile-sub-first {
     padding: 1rem;
   }
-  .sub-header-mobile .mobile-sub-second{
+  .sub-header-mobile .mobile-sub-second {
     gap: 15px;
   }
-  .sub-header-mobile .mobile-sub-first{
+  .sub-header-mobile .mobile-sub-first {
     gap: 20px;
   }
 }
 @media (max-width: 800px) {
-  .sub-header-mobile .mobile-common-btn{
+  .sub-header-mobile .mobile-common-btn {
     gap: 8px;
     font-size: 16px;
   }
 }
 /* ------ subheader mobile section css end ------ */
+
+/* ------ search result section css end ------ */
+.header-section .search-result {
+  position: absolute;
+  width: 100%;
+  height: 95vh;
+  min-height: 90vh;
+  display: none;
+  padding: 0 50px 100px;
+  top: 83px;
+  left: 0;
+  background: rgba(57, 57, 57, 0.65);
+  z-index: 99999999999;
+}
+.header-section .search-result.show {
+  display: block;
+}
+.search-result .content-wrapper {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  min-height: 600px;
+  flex-direction: column;
+  background: #e6e6e6;
+  padding: 45px 30px;
+  overflow-y: hidden;
+}
+.search-result .content-wrapper .left-list-part {
+  display: flex;
+  width: 100%;
+  height: 635px;
+  overflow-y: scroll;
+  flex-direction: column;
+  gap: 50px;
+}
+.search-result .content-wrapper .left-list-part p.title {
+  color: #393939;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114.5%;
+  text-transform: capitalize;
+}
+.search-result .content-wrapper .left-list-part p.title span {
+  color: var(--primary-color);
+}
+.search-result .left-list-part .results-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+}
+.search-result .left-list-part .results-list .verticle-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+}
+.search-result .left-list-part .results-list .verticle-row .result-item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 28px;
+}
+.search-result .result-item .image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.search-result .result-item .image-block img {
+  height: 100%;
+}
+.search-result .result-item .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.search-result .result-item .details .item-title {
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+}
+.search-result .result-item .details .price-part {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 28px;
+}
+.search-result .result-item .details .price-part p {
+  color: #000;
+  font-size: 24px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  line-height: 114.5%;
+}
+.search-result .result-item .details .price-part .cart-btn {
+  all: unset;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  font-size: 28px;
+  color: var(--primary-color);
+  background-color: #e6e6e6;
+  transition: all 0.3s ease;
+}
+.search-result .result-item .details .price-part .cart-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.search-result .content-wrapper .right-suggestion-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding-left: 25px; */
+}
+.search-result .right-suggestion-part .category-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.search-result .right-suggestion-part .category-list .top-heading {
+  display: flex;
+  width: 100%;
+  padding: 16px 22px;
+  background-color: #d9d9d9;
+}
+.search-result .right-suggestion-part .category-list .top-heading h6 {
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 114.5%;
+}
+.search-result .right-suggestion-part .category-list ul {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search-result .right-suggestion-part .category-list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 100%;
+}
+.search-result .right-suggestion-part .view-all-btn {
+  all: unset;
+  width: 166px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  color: #151515;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 114.5%;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+.search-result .right-suggestion-part .view-all-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .search-result .left-list-part .results-list .verticle-row,
+  .search-result .left-list-part .results-list,
+  .search-result .content-wrapper .left-list-part{
+    gap: 35px;
+  }
+}
+@media (max-width: 1450px) and (min-width: 1400px) {
+  .search-result .right-suggestion-part .category-list ul{
+    gap: 5px;
+    margin: 10px 0;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .search-result .result-item .image-block{
+    height: 120px;
+  }
+  .search-result .content-wrapper{
+    padding: 20px;
+  }
+  .search-result .right-suggestion-part .category-list ul{
+    gap: 5px;
+    margin: 10px 0;
+  }
+}
+/* ------ search result section css end ------ */
 /* ---------- responsive css start ----------- */
 @media screen and (max-width: 1600px) {
   .common-recommended-section .list-block {

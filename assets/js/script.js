@@ -1,6 +1,8 @@
 var isMainMenuActive = false;
 var isSubMenuActive = false;
 var isSubSubMenuActive = false;
+var isRegoActive = false;
+var isVehicleActive = false;
 
 $(".menu-button").click(function () {
   isMainMenuActive = true;
@@ -58,14 +60,39 @@ $(".main-menu-list").click(function () {
 
 $("#rego").click(function () {
   $(".mobile-vehicle.active").removeClass("active");
-  $(".mobile-rego").addClass("active");
-  $(".form-block.vehicle").slideUp(300).removeClass("active-form");
-  $(".form-block.rego").slideDown(300).addClass("active-form");
+  isVehicleActive = false;
+  if (isRegoActive) {
+    $(".form-block.rego").slideUp(300).removeClass("active-form");
+    isRegoActive = false;
+  } else {
+    $(".mobile-rego").addClass("active");
+    $(".form-block.vehicle").slideUp(300).removeClass("active-form");
+    $(".form-block.rego").slideDown(300).addClass("active-form");
+    isRegoActive = true;
+  }
 })
 
 $("#vehicle").click(function () {
-  $(".mobile-vehicle").addClass("active");
-  $(".mobile-rego.active").removeClass("active");
-  $(".form-block.rego").slideUp(300).removeClass("active-form");
-  $(".form-block.vehicle").slideDown(300).addClass("active-form");
+  if (isVehicleActive) {
+    $(".form-block.vehicle").slideUp(300).removeClass("active-form");
+    isVehicleActive = false;
+  } else {
+    $(".mobile-vehicle").addClass("active");
+    isRegoActive = false;
+    $(".mobile-rego.active").removeClass("active");
+    $(".form-block.rego").slideUp(300).removeClass("active-form");
+    $(".form-block.vehicle").slideDown(300).addClass("active-form");
+    isVehicleActive = true;
+  }
 })
+
+
+$("#searchInput").focus(function () {
+  $(".search-result").slideDown(300).addClass('show');
+})
+
+$(document).on("click", function (event) {
+  if (!$(event.target).closest(".content-wrapper").length && !$(event.target).closest("#searchField").length) {
+    $(".search-result").slideUp(300).removeClass('show');
+  }
+});
