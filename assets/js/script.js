@@ -97,10 +97,27 @@ $(document).on("click", function (event) {
   }
 });
 
-$("#myGarage").click(function(event) {
+$("#myGarage").click(function (event) {
   event.preventDefault(); // Prevent the default button behavior
   $(".my-garage").slideDown(300).addClass("show");
   $(".my-garage > .rego-modal").slideDown(300).removeClass("hide");
   $(".my-garage > .vehicle-modal").addClass("hide");
 });
 
+$("#vehicleBtn").click(function (event) {
+  event.preventDefault();
+  $(".my-garage > .rego-modal").not(":animated").addClass("hide");
+  $(".my-garage > .vehicle-modal.hide").not(":animated").removeClass("hide");
+})
+$("#backToRego").click(function (event) {
+  event.preventDefault();
+  $(".my-garage > .vehicle-modal").not(":animated").addClass("hide");
+  $(".my-garage >.rego-modal.hide").not(":animated").removeClass("hide");
+})
+
+// $(document).on("click", function (event) {
+//   event.preventDefault();
+//   if(!$(event.target).closest(".modal-block.rego-modal").length && !$(event.target).closest(".modal-block.vehicle-modal").length && !$(event.target).is("#myGarage")) {
+//     $(".my-garage").slideUp(300).removeClass("show");
+//   }
+// })
