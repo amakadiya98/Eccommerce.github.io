@@ -49,13 +49,13 @@
             <img src="./assets//images/header/search.svg" alt="search" />
           </button>
           <select class="country-select"></select>
-          <a href="#" class="page-nav-btn mobile-hide-icon">
+          <button href="#" class="page-nav-btn mobile-hide-icon" id="myGarage">
             <img
               src="./assets/images/header/Garage.svg"
               alt="Garage"
               class="mobile-hide"
             />
-          </a>
+          </button>
           <a href="#" class="page-nav-btn mobile-hide-icon">
             <img
               src="./assets/images/header/Store.svg"
@@ -993,6 +993,87 @@
                   <i class="fas fa-chevron-right"></i>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-garage ">
+        <div class="modal-block rego-modal">
+          <div class="modal-heading">
+            <div class="icon-block">
+              <img src="./assets/images/common/rego-modal-icon.svg" alt="modal-icon" />
+            </div>
+            <div class="tringle"></div>
+            <div class="text-block">
+              <h5>My Garage</h5>
+              <p>Add you vehicles here to shop products hat fit.</p>
+            </div>
+          </div>
+          <div class="sub-heading">Search by Rego</div>
+          <div class="input-block">
+            <div class="input-part">
+              <h6>Let’s start by adding your vehicle.</h6>
+              <p>Step 1. <span>Do you know the rego plate?</span></p>
+              <fieldset>
+                <img src="./assets/images/common/rego-colored-input.svg" alt="input-bg" />
+                <input type="text" />
+              </fieldset>
+              <p class="mb-3">Step 2. <span>Enter your state:</span></p>
+              <select name="state" id="state">
+                <option value="0">Select an option</option>
+                <option value="1">state 1</option>
+                <option value="2">state 2</option>
+              </select>
+              <button class="find-btn">Find</button>
+            </div>
+            <div class="action-part">
+              <p>OR</p>
+              <button class="find-btn"><img src="./assets/images/common/rego-modal-icon.svg" alt="btn-icon" />SEARCH BY VEHICLE</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-block vehicle-modal hide">
+          <div class="modal-heading">
+            <div class="icon-block">
+              <img src="./assets/images/common/rego-modal-icon.svg" alt="modal-icon" />
+            </div>
+            <div class="tringle"></div>
+            <div class="text-block">
+              <h5>My Garage</h5>
+              <p>Add you vehicles here to shop products hat fit.</p>
+            </div>
+          </div>
+          <div class="sub-heading"><span>Search by Vehicle</span> <button><i class="fas fa-arrow-left"></i>Back</button></div>
+          <div class="input-block">
+            <div class="input-part">
+              <h6>Let’s start by adding your vehicle.</h6>
+              <div class="form-group">
+                <label for="make">Select Make</label>
+                <select name="" id="make">
+                  <option value="0">Make</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="make"><span>*</span>Select Model</label>
+                <select name="" id="make">
+                  <option value="0">Modal</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="make"><span>*</span>Select Series</label>
+                <select name="" id="make">
+                  <option value="0">Series</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="make"><span>*</span>Select Config</label>
+                <select name="" id="make">
+                  <option value="0">Config</option>
+                </select>
+              </div>
+            </div>
+            <div class="action-part">
+              <button class="find-btn">Find</button>
             </div>
           </div>
         </div>

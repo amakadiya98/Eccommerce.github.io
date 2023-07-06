@@ -96,3 +96,11 @@ $(document).on("click", function (event) {
     $(".search-result").slideUp(300).removeClass('show');
   }
 });
+
+$("#myGarage").click(function(event) {
+  event.preventDefault(); // Prevent the default button behavior
+  $(".my-garage").slideDown(300).addClass("show");
+  $(".my-garage > .rego-modal").slideDown(300).removeClass("hide");
+  $(".my-garage > .vehicle-modal").addClass("hide");
+});
+
