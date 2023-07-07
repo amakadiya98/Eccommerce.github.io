@@ -98,7 +98,7 @@ $(document).on("click", function (event) {
 });
 
 $("#myGarage").click(function (event) {
-  event.preventDefault(); // Prevent the default button behavior
+  event.preventDefault();
   $(".my-garage").slideDown(300).addClass("show");
   $(".my-garage > .rego-modal").slideDown(300).removeClass("hide");
   $(".my-garage > .vehicle-modal").addClass("hide");
@@ -115,9 +115,16 @@ $("#backToRego").click(function (event) {
   $(".my-garage >.rego-modal.hide").not(":animated").removeClass("hide");
 })
 
-// $(document).on("click", function (event) {
-//   event.preventDefault();
-//   if(!$(event.target).closest(".modal-block.rego-modal").length && !$(event.target).closest(".modal-block.vehicle-modal").length && !$(event.target).is("#myGarage")) {
-//     $(".my-garage").slideUp(300).removeClass("show");
-//   }
-// })
+$(".my-garage").click(function (event) {
+  if(!$(event.target).closest(".modal-block").length) {
+    $(".my-garage").slideUp(300).removeClass("show");
+  }
+})
+
+$("#cartBtn").click(function () {
+  $(".cart-section").slideDown(300).addClass("show");
+})
+
+$("#cart-close").click(function() {
+  $(".cart-section").slideUp(300).removeClass("show");
+})
