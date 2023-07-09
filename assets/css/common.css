@@ -66,13 +66,15 @@ h5,
 h6,
 p,
 span,
-b {
+b,
+hr {
   margin: 0;
   padding: 0;
 }
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 /* ------- header section css start ------- */
 
@@ -1726,11 +1728,14 @@ span.divider {
 .cart-section .cart-modal {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 325px;
   height: 100%;
   background: #fff;
   position: absolute;
   right: 0;
+  overflow-y: hidden;
 }
 .cart-section .cart-modal .cart-head {
   display: flex;
@@ -1768,13 +1773,21 @@ span.divider {
   display: flex;
   width: 100%;
   flex-direction: column;
+  gap: 35px;
+  overflow-y: auto;
+  height: 100%;
+  justify-content: space-between;
 }
 .cart-modal .cart-content .cart-item {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 20px 30px 20px 20px;
   flex-direction: column;
   gap: 5px;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+}
+.cart-modal .cart-content .cart-item:last-child {
+  border-bottom: none;
 }
 .cart-modal .cart-content .cart-item .item-title {
   color: #000;
@@ -1788,6 +1801,7 @@ span.divider {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
 }
 .cart-modal .cart-content .cart-item .item-details .image-block {
@@ -1809,17 +1823,90 @@ span.divider {
   font-family: "Ubuntu";
   font-size: 14px;
   font-weight: 700;
+  padding-right: 5px;
 }
 .cart-modal .price-block .action-block {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 10px;
 }
-.cart-modal,
-.price-block .action-block .quentity {
+.cart-modal .price-block .action-block button {
+  all: unset;
+  cursor: pointer;
+}
+.cart-modal .price-block .action-block .quentity {
   display: flex;
   align-items: center;
-  width: 60px;
+  justify-content: space-between;
+  width: 65px;
+  background-color: rgba(233, 233, 233, 1);
+  border-radius: 6px;
+}
+.cart-modal .price-block .action-block .quentity .minus-btn,
+.cart-modal .price-block .action-block .quentity .plus-btn {
+  height: 100%;
+  width: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(57, 57, 57);
+  color: #fff;
+}
+.cart-modal .price-block .action-block .quentity .minus-btn {
+  border-radius: 6px 0 0 6px;
+}
+.cart-modal .price-block .action-block .quentity .plus-btn {
+  border-radius: 0 6px 6px 0;
+}
+.cart-modal .cart-content .bottom-price-block {
+  display: flex;
+  padding: 30px 18px 20px;
+  width: 100%;
+  flex-direction: column;
+  background: #eee;
+  gap: 15px;
+}
+.cart-modal .cart-content .bottom-price-block .total-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+.cart-modal .cart-content .bottom-price-block .total-part span {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.cart-modal .cart-content .bottom-price-block .total-part p {
+  color: #28a5d8;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.cart-modal .cart-content .bottom-price-block .view-cart-btn,
+.cart-modal .cart-content .bottom-price-block .checkout-btn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: capitalize;
+  background: #28a5d8;
+}
+.cart-modal .cart-content .bottom-price-block .checkout-btn{
+  background: #393939;
 }
 /* ------ cart section css end ------ */
 
