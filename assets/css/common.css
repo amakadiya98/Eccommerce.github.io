@@ -76,7 +76,7 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
 /* ------- header section css start ------- */
@@ -1781,7 +1781,7 @@ span.divider {
   height: 100%;
   justify-content: space-between;
 }
-.cart-modal .cart-content .items-block{
+.cart-modal .cart-content .items-block {
   width: 100%;
   height: auto;
   overflow-y: auto;
@@ -1913,7 +1913,7 @@ span.divider {
   text-transform: capitalize;
   background: #28a5d8;
 }
-.cart-modal .cart-content .bottom-price-block .checkout-btn{
+.cart-modal .cart-content .bottom-price-block .checkout-btn {
   background: #393939;
 }
 /* ------ cart section css end ------ */
@@ -2162,6 +2162,12 @@ span.divider {
   .header-section nav {
     gap: 0;
   }
+  .common-recommended-section .list-block .owl-theme .owl-next {
+    right: -40px;
+  }
+  .common-recommended-section .list-block .owl-theme .owl-prev {
+    left: -40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2216,6 +2222,13 @@ span.divider {
   }
   .footer-section .info-part .company-details {
     gap: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  .common-recommended-section .list-block .owl-theme .owl-next,
+  .common-recommended-section .list-block .owl-theme .owl-prev {
+    display: none;
   }
 }
 
@@ -2323,4 +2336,22 @@ span.divider {
   max-width: 40%;
   margin: auto;
   margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .common-banner-section .banner-content p {
+    max-width: 75%;
+  }
+  .common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+    font-size: 14px;
+  }
+  .common-banner-section .banner-content h2{
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .common-banner-section .banner-content p {
+    max-width: 90%;
+  }
 }

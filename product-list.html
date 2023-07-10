@@ -1019,8 +1019,35 @@
                     </p>
                   </div>
                 </div>
+                <p class="label">Sort By</p>
+                <div class="filter-part">
+                  <div class="filter-block">
+                    <div class="groups">
+                      <select name="product" id="product">
+                        <option value="Recommended For You">Recommended For You</option>
+                        <option value="1">item 1</option>
+                      </select>
+                      <select name="show" id="show">
+                        <option value="show">show</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                        <option value="36">36</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+                </div>
                 <div class="row spacing-part">
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1042,7 +1069,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon highstock">High Stock</div>
                       <div class="image-part">
@@ -1064,7 +1091,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1086,7 +1113,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1108,7 +1135,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1130,7 +1157,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1153,7 +1180,7 @@
                     </a>
                   </div>
 
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1175,7 +1202,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1197,7 +1224,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1219,7 +1246,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-xl-4 col-md-6 col-12">
                     <a href="#" class="product-list-card">
                       <div class="ribbon">Low Stock</div>
                       <div class="image-part">
@@ -1625,16 +1652,18 @@
         responsive: {
           0: {
             items: 1,
-            nav: false,
             dots: true,
+            nav: false,
           },
           769: {
             items: 2,
             nav: true,
+            dots: false,
           },
           1024: {
             items: 4,
             nav: true,
+            dots: false,
           },
         },
       });
