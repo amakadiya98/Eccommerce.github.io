@@ -76,6 +76,9 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 /* ------- header section css start ------- */
 
 .header-section {
@@ -1558,7 +1561,7 @@ span.divider {
   height: 100%;
   width: 100%;
   align-items: flex-start;
-  gap: 100px;
+  gap: 70px;
   overflow-y: auto;
 }
 .my-garage .modal-block .input-block .input-part {
@@ -1717,7 +1720,7 @@ span.divider {
   position: absolute;
   width: 100vw;
   top: 83px;
-  height: 95vh;
+  height: calc(100vh - 82px);
   display: none;
   background-color: rgba(57, 57, 57, 0.5);
   z-index: 8;
@@ -1774,9 +1777,14 @@ span.divider {
   width: 100%;
   flex-direction: column;
   gap: 35px;
-  overflow-y: auto;
+  overflow: hidden;
   height: 100%;
   justify-content: space-between;
+}
+.cart-modal .cart-content .items-block{
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
 }
 .cart-modal .cart-content .cart-item {
   display: flex;
