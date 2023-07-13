@@ -1,0 +1,194 @@
+.login-page {
+  width: 100%;
+  position: relative;
+}
+
+.login-page.overflow-hidden {
+  overflow: hidden;
+}
+
+/* ----- signin part----- */
+.login-page .signin-section {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 100px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(57, 57, 57, 0.65);
+}
+
+.signin-section .form-part {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #fff;
+  box-shadow: -8px 4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+.signin-section .form-part .heading-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #28a5db;
+}
+.signin-section .form-part .heading-block > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+.signin-section .form-part .heading-block > div h3 {
+  color: #fff;
+  font-family: "Ubuntu";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 115%;
+}
+
+.signin-section .form-part .heading-block > div > button {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  margin-right: 40px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #28a5db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.signin-section .form-part .heading-block > div > button:hover {
+  transform: scale(0.98);
+}
+.signin-section .form-part .content-block {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 55px 70px;
+  gap: 25px;
+}
+.signin-section .form-part .content-block .group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.signin-section .form-part .content-block .group > label {
+  color: #393939;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 115%;
+  text-transform: capitalize;
+}
+.signin-section .form-part .content-block .group > input {
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid rgba(57, 57, 57, 0.6);
+  padding: 8px 15px;
+  color: #b4b4b4;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: lowercase;
+}
+.signin-section .form-part .content-block .group > a {
+  text-decoration: none;
+  display: inline-flex;
+  width: 100%;
+  text-align: right;
+  justify-content: flex-end;
+  color: #393939;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.signin-section .form-part .content-block .group > a:hover {
+  color: #28a5db;
+}
+.signin-section .form-part .content-block .captcha-text {
+  margin-top: -20px;
+  color: #393939;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+}
+.signin-section .form-part .content-block .login-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #28a5db;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 115%;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.signin-section .form-part .content-block .login-btn:hover {
+  transform: scale(0.98);
+}
+.signin-section .form-part .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin-section .form-part .divider .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(97, 97, 97, 0.5);
+}
+.signin-section .form-part .divider p {
+  color: #808080;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px 25px;
+  position: absolute;
+  background-color: #fff;
+}
+.signin-section .form-part .new-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 55px;
+}
+
+.signin-section .form-part .new-account .new-acc-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: 1px solid #28a5db;
+  color: #28a5d8;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+
+.signin-section .form-part .new-account .new-acc-btn:hover {
+    background-color: #fff;
+    color: #28a5db;
+}
