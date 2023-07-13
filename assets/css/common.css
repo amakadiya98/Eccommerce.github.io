@@ -74,7 +74,7 @@ hr {
 
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -325,6 +325,27 @@ body {
   font-size: 14px;
 }
 
+.mobile-menu-inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #28a5d8;
+  padding: 14px 20px;
+}
+.mobile-menu-inner .profile-button {
+  all: unset;
+  cursor: pointer;
+}
+.mobile-menu-inner p.user-name {
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
 @media (max-width: 1080px) {
   .mobile-hide-icon {
     display: none;
@@ -357,7 +378,11 @@ body {
     display: none !important;
   }
 
-  .header-section .menu-button img {
+  .header-section .right-nav .select2-container {
+    display: none;
+  }
+  .header-section .menu-button img,
+  .header-section .close-button img {
     width: 26px;
   }
 
@@ -374,6 +399,17 @@ body {
   }
 }
 
+@media (min-width: 577px) {
+  .mobile-menu-inner {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .small-device-hide {
+    display: none;
+  }
+}
 /* ------- header section css end ------- */
 
 /* ------- Menu modal section css start ------- */
@@ -382,7 +418,7 @@ body {
   position: absolute;
   height: 350px;
   top: 100%;
-  z-index: 100;
+  z-index: 9999999;
 }
 
 .menu-modal {
@@ -516,6 +552,48 @@ span.divider {
 .menu-modal-three .subsubmenu li.subsub-menu-list .subsub-menu-link:hover {
   color: #28a5d8;
 }
+
+@media (max-width: 1280px) {
+  .header-section .common {
+    width: 300px;
+    padding: 0 25px;
+  }
+  .menu-modal-two.common,
+  .menu-modal-three.common {
+    padding: 20px;
+    left: 300px;
+  }
+  span.divider {
+    width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-modal-three.common {
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@media (max-width: 620px) {
+  .menu-modal-two.common,
+  .menu-modal-three.common,
+  .menu-modal {
+    left: 0;
+    background-color: #e3e4e4;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-modal .modal-ul{
+    margin-top: 4rem;
+  }
+  .menu-modal-two .common-title,
+  .menu-modal-three .common-title {
+    margin-top: 50px;
+  }
+}
 /* ------- Menu modal section css end ------- */
 
 /* ------- section section css start ------- */
@@ -648,6 +726,7 @@ span.divider {
 .sub-header-mobile {
   display: none;
 }
+
 
 /* ------- section section css end ------- */
 
@@ -1213,7 +1292,11 @@ span.divider {
 }
 @media (max-width: 906px) {
   .sub-header-mobile .primary-btn {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .sub-header-mobile .primary-btn.with-icon img {
+    width: 22px;
+    height: auto;
   }
   .sub-header-mobile .mobile-sub-second,
   .sub-header-mobile .mobile-sub-first {
@@ -1230,6 +1313,24 @@ span.divider {
   .sub-header-mobile .mobile-common-btn {
     gap: 8px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 620px) {
+  .sub-header-mobile{
+    grid-template-columns: 100%;
+  }
+  .sub-header-mobile .form-block{
+    top: 275px;
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sub-header-mobile .mobile-common-btn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* ------ subheader mobile section css end ------ */
@@ -2342,10 +2443,10 @@ span.divider {
   .common-banner-section .banner-content p {
     max-width: 75%;
   }
-  .common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+  .common-banner-section .banner-content .breadcrumb .breadcrumb-item {
     font-size: 14px;
   }
-  .common-banner-section .banner-content h2{
+  .common-banner-section .banner-content h2 {
     font-size: 36px;
   }
 }
