@@ -94,17 +94,21 @@
   padding-top: 25px;
   gap: 15px;
 }
-.our-product-section .product-list-part .product-types {
+.our-product-section .product-list-part .nav-tabs {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
+}
+.our-product-section .product-list-part .nav-tabs .nav-link{
+  border: none;
+  padding: 0;
 }
 .our-product-section .product-list-part .types {
   color: #928f8f;
   font-size: 28px;
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
   font-weight: 500;
   text-transform: uppercase;
   display: flex;
@@ -130,15 +134,7 @@
 .our-product-section .product-list-part .nav-tabs {
   border-bottom: none;
 }
-.our-product-section .product-list-part .nav-tabs .nav-link{
-  padding: 8px 12px;
-}
-.our-product-section .product-list-part .nav-tabs .nav-link.active,
-.our-product-section .product-list-part .nav-tabs .nav-link:hover,
-.our-product-section .product-list-part .nav-tabs .nav-link:focus-visible {
-  border: none;
-  box-shadow: none;
-}
+
 .our-product-section .product-list-part .list-block {
   display: flex;
   width: 100%;
@@ -811,7 +807,7 @@ iframe {
 }
 
 @media screen and (max-width: 1440px) {
-  .our-product-section .product-list-part .product-types .types {
+  .our-product-section .product-list-part .types {
     font-size: 24px;
   }
   .our-product-section .product-list-part .list-block .item-box {
@@ -963,10 +959,10 @@ iframe {
     font-size: 36px;
     line-height: 48px;
   }
-  .our-product-section .product-list-part .product-types .types {
+  .our-product-section .product-list-part .types {
     font-size: 20px;
   }
-  .our-product-section .product-list-part .product-types .types::after {
+  .our-product-section .product-list-part .types::after {
     height: 20px;
     width: 2px;
   }
@@ -1067,11 +1063,10 @@ iframe {
     font-size: 30px;
     line-height: 40px;
   }
-  .our-product-section .product-list-part .product-types .types {
+  .our-product-section .product-list-part .types {
     font-size: 16px;
-    gap: 10px;
   }
-  .our-product-section .product-list-part .product-types .types::after {
+  .our-product-section .product-list-part .types::after {
     height: 16px;
     margin-left: 10px;
   }
