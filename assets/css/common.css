@@ -82,8 +82,15 @@ body {
 /* ------- header section css start ------- */
 
 .header-section {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main-block {
+  padding-top: 170px;
 }
 .header-section .logo {
   width: 285px;
@@ -586,7 +593,7 @@ span.divider {
 }
 
 @media (max-width: 576px) {
-  .menu-modal .modal-ul{
+  .menu-modal .modal-ul {
     margin-top: 4rem;
   }
   .menu-modal-two .common-title,
@@ -726,7 +733,6 @@ span.divider {
 .sub-header-mobile {
   display: none;
 }
-
 
 /* ------- section section css end ------- */
 
@@ -1286,7 +1292,7 @@ span.divider {
   .rego.active-form {
     display: none !important;
   }
-  .main-block .sub-header-mobile {
+  .sub-header-mobile {
     display: none;
   }
 }
@@ -1317,10 +1323,10 @@ span.divider {
 }
 
 @media (max-width: 620px) {
-  .sub-header-mobile{
+  .sub-header-mobile {
     grid-template-columns: 100%;
   }
-  .sub-header-mobile .form-block{
+  .sub-header-mobile .form-block {
     top: 275px;
     padding: 40px 60px;
   }
@@ -2152,15 +2158,23 @@ span.divider {
 
 @media screen and (max-width: 1170px) {
   .sub-header-section .sub-main-second,
-  .sub-header-section .sub-second-first {
+  .sub-header-section .sub-second-first,
+  .sub-second-second {
     gap: 0.5rem;
   }
 }
 @media screen and (max-width: 1080px) {
+  .main-block {
+    padding-top: 153px;
+  }
   .header-section .center-nav fieldset {
     display: none;
   }
-
+  .sub-header-mobile .mobile-sub-second,
+  .sub-header-mobile .mobile-sub-first,
+  .header-section nav {
+    padding: 0.5rem 1.25rem;
+  }
   .header-section .center-nav {
     display: none;
   }
