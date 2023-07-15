@@ -1247,7 +1247,7 @@ span.divider {
 
 .sub-header-mobile .form-block {
   position: absolute;
-  top: 185px;
+  top: 153px;
   display: none;
   width: 100vw;
   padding: 40px 110px;
@@ -1324,19 +1324,37 @@ span.divider {
 
 @media (max-width: 620px) {
   .sub-header-mobile {
-    grid-template-columns: 100%;
+    grid-template-columns: 40% 60%;
   }
   .sub-header-mobile .form-block {
-    top: 275px;
+    top: 115px;
     padding: 40px 60px;
+  }
+  .sub-header-mobile .mobile-sub-first{
+    gap: 10px;
+  }
+  .sub-header-mobile .mobile-common-btn p {
+    display: none;
+  }
+  .sub-header-mobile .primary-btn {
+    width: 40%;
+    height: 40px;
+  }
+  .sub-header-mobile .mobile-sub-first .h-line {
+    height: 45px;
+  }
+  .sub-header-mobile .mobile-common-btn{
+    justify-content: center;
+    width: 45%;
   }
 }
 
-@media (max-width: 400px) {
-  .sub-header-mobile .mobile-common-btn {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 500px) {
+  .sub-header-mobile .primary-btn.with-icon img{
+    display: none;
+  }
+  .sub-header-mobile .primary-btn{
+    width: 45%;
   }
 }
 /* ------ subheader mobile section css end ------ */
@@ -2023,6 +2041,18 @@ span.divider {
 .cart-modal .cart-content .bottom-price-block .checkout-btn {
   background: #393939;
 }
+
+@media (max-width: 1080px) {
+  .cart-section{
+    top: 66px;
+  }
+}
+
+@media (max-width: 620px) {
+  .cart-section{
+    top: 60px;
+  }
+}
 /* ------ cart section css end ------ */
 
 /* ---------- responsive css start ----------- */
@@ -2465,6 +2495,16 @@ span.divider {
   }
 }
 
+@media (max-width: 620px) {
+  .sub-header-mobile .mobile-sub-second,
+  .sub-header-mobile .mobile-sub-first,
+  .header-section nav {
+    padding: 5px 10px;
+  }
+  .main-block {
+    padding-top: 115px;
+  }
+}
 @media (max-width: 500px) {
   .common-banner-section .banner-content p {
     max-width: 90%;

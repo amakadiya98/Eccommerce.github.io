@@ -20,7 +20,16 @@ $(document).on("click", function (event) {
     $(".menu-modal").addClass("hide");
     $(".menu-modal-two").slideUp(300).removeClass("two-active");
     $(".menu-modal-three").slideUp(300).removeClass("three-active");
+  }
+
+  if (!target.closest(".sub-header-mobile").length) {
+    $(".form-block.rego").slideUp(300).removeClass("active-form");
+    $(".form-block.vehicle").slideUp(300).removeClass("active-form");
     $("body").removeClass("overflow-hidden");
+    isRegoActive = false;
+    isVehicleActive = true;
+    $(".mobile-vehicle.active").removeClass("active");
+    $(".mobile-rego").addClass("active");
   }
 });
 
@@ -92,6 +101,7 @@ $("#rego").click(function () {
   isVehicleActive = false;
   if (isRegoActive) {
     $(".form-block.rego").slideUp(300).removeClass("active-form");
+    $("body").removeClass("overflow-hidden");
     isRegoActive = false;
   } else {
     $(".mobile-rego").addClass("active");
@@ -104,10 +114,11 @@ $("#rego").click(function () {
 $("#vehicle").click(function () {
   if (isVehicleActive) {
     $(".form-block.vehicle").slideUp(300).removeClass("active-form");
-    $("body").addClass("overflow-hidden");
+    $("body").removeClass("overflow-hidden");
     isVehicleActive = false;
   } else {
     $(".mobile-vehicle").addClass("active");
+    $("body").addClass("overflow-hidden");
     isRegoActive = false;
     $(".mobile-rego.active").removeClass("active");
     $(".form-block.rego").slideUp(300).removeClass("active-form");
@@ -118,6 +129,7 @@ $("#vehicle").click(function () {
 
 $("#searchInput").focus(function () {
   $(".search-result").slideDown(300).addClass("show");
+  $("body").addClass("overflow-hidden");
 });
 
 $(document).on("click", function (event) {
@@ -156,11 +168,18 @@ $(".my-garage").click(function (event) {
 });
 
 $("#cartBtn").click(function () {
-  $("body").addClass("overflow-hidden");
   $(".cart-section").slideDown(300).addClass("show");
+  $("body").addClass("overflow-hidden");
 });
 
 $("#cart-close").click(function () {
   $(".cart-section").slideUp(300).removeClass("show");
   $("body").removeClass("overflow-hidden");
+});
+
+$(".cart-section").click(function (event) {
+  if (!$(event.target).closest(".cart-modal").length) {
+    $(".cart-section").slideUp(300).removeClass("show");
+    $("body").removeClass("overflow-hidden");
+  }
 });
