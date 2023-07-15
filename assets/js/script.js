@@ -11,6 +11,7 @@ $(".menu-button").click(function () {
   $(".menu-button").addClass("hide");
   $(".close-button").removeClass("hide");
   $(".menu-modal").removeClass("hide");
+  $("body").addClass("overflow-hidden");
 });
 
 $(".close-button").click(function () {
@@ -22,6 +23,7 @@ $(".close-button").click(function () {
   $(".menu-modal").addClass("hide");
   $(".menu-modal-two").slideUp(300).removeClass("two-active");
   $(".menu-modal-three").slideUp(300).removeClass("three-active");
+  $("body").removeClass("overflow-hidden");
 });
 
 $(".menu-modal-two").parent("li").click(function () {
