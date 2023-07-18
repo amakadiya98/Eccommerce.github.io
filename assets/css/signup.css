@@ -1,0 +1,52 @@
+/* ---- signup section css start ---- */
+.signup-page .signup-section {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    padding: 50px 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(57, 57, 57, 0.65);
+    z-index: 999999000;
+  }
+  
+  .signup-section .form-part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: -8px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  }
+  .signup-section .form-part .heading-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #28a5db;
+    color: #fff;
+  }
+  
+  .signup-section .form-part .content-block {
+    display: flex;
+    width: 100%;
+    padding: 50px 35px;
+  }
+  .signup-section .content-block .custom-row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 68% auto;
+    column-gap: 55px;
+  }
+  .content-block .custom-row .left-part {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+  /* ---- signup section css end ---- */
+  
