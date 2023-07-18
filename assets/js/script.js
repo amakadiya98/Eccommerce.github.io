@@ -183,3 +183,28 @@ $(".cart-section").click(function (event) {
     $("body").removeClass("overflow-hidden");
   }
 });
+
+$("#my-garagebtn").click(function () {
+  $(".my-garage-filter-section").slideDown(300).addClass("show");
+  $("body").addClass("overflow-hidden");
+});
+$(".filter-modal-close").click(function () {
+  $(".my-garage-filter-section").slideUp(300).removeClass("show");
+  $("body").removeClass("overflow-hidden");
+  $(".filter-modal.with-login").slideUp(300).addClass("hide");
+  $(".filter-modal.without-login").slideDown(300).removeClass("hide");
+});
+
+$(".my-garage-filter-section").click(function (event) {
+  if (!$(event.target).closest(".filter-modal").length) {
+    $(".my-garage-filter-section").slideUp(300).removeClass("show");
+    $("body").removeClass("overflow-hidden");
+    $(".filter-modal.with-login").slideUp(300).addClass("hide");
+    $(".filter-modal.without-login").slideDown(300).removeClass("hide");
+  }
+});
+
+$("#filter-login-btn").click(function () {
+  $(".filter-modal.without-login").slideUp(300).addClass("hide");
+  $(".filter-modal.with-login").slideDown(300).removeClass("hide");
+});

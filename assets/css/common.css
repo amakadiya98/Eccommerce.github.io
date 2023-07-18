@@ -1330,7 +1330,7 @@ span.divider {
     top: 115px;
     padding: 40px 60px;
   }
-  .sub-header-mobile .mobile-sub-first{
+  .sub-header-mobile .mobile-sub-first {
     gap: 10px;
   }
   .sub-header-mobile .mobile-common-btn p {
@@ -1343,17 +1343,17 @@ span.divider {
   .sub-header-mobile .mobile-sub-first .h-line {
     height: 45px;
   }
-  .sub-header-mobile .mobile-common-btn{
+  .sub-header-mobile .mobile-common-btn {
     justify-content: center;
     width: 45%;
   }
 }
 
 @media (max-width: 500px) {
-  .sub-header-mobile .primary-btn.with-icon img{
+  .sub-header-mobile .primary-btn.with-icon img {
     display: none;
   }
-  .sub-header-mobile .primary-btn{
+  .sub-header-mobile .primary-btn {
     width: 45%;
   }
 }
@@ -1883,7 +1883,8 @@ span.divider {
   line-height: normal;
   width: 65%;
 }
-.cart-section .cart-modal .cart-head #cart-close {
+.cart-section .cart-modal .cart-head #cart-close,
+.my-garage-filter-section .filter-modal-close {
   border: none;
   outline: none;
   width: 23px;
@@ -2043,13 +2044,13 @@ span.divider {
 }
 
 @media (max-width: 1080px) {
-  .cart-section{
+  .cart-section {
     top: 66px;
   }
 }
 
 @media (max-width: 620px) {
-  .cart-section{
+  .cart-section {
     top: 60px;
   }
 }
@@ -2510,3 +2511,102 @@ span.divider {
     max-width: 90%;
   }
 }
+
+/* --- my-garage filter section css start --- */
+.my-garage-filter-section {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 150px 25px 0 0;
+  background: rgba(43, 43, 43, 0.5);
+}
+.my-garage-filter-section.show {
+  display: block;
+}
+.my-garage-filter-section .filter-modal {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  width: 423px;
+  /* height: 336px; */
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.my-garage-filter-section .filter-modal.without-login.hide,
+.my-garage-filter-section .filter-modal.with-login.hide {
+  display: none;
+} 
+.filter-modal .modal-heading {
+  display: flex;
+  width: 100%;
+  height: 55px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #28a5d8;
+  border-radius: 6px 6px 0 0;
+}
+.filter-modal .modal-heading h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  font-family: "Ubuntu";
+}
+.filter-modal .filter-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 18px;
+  gap: 20px;
+}
+
+.filter-content fieldset .input-group input {
+  border-radius: 6px !important;
+  background: #ebebeb;
+}
+.filter-content .cyan-btn {
+  color: #fff;
+}
+.with-login fieldset .input-group {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.with-login fieldset .input-group input {
+  width: 80%;
+  padding: 8px 15px;
+}
+.with-login fieldset .input-group button {
+  width: 20%;
+  border-radius: 6px !important;
+}
+.with-login .filter-content fieldset ul{
+  padding: 0;
+}
+.with-login .filter-content fieldset ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+}
+.with-login .filter-content fieldset ul li:last-child{
+  border-bottom: none;
+}
+.filter-modal .filter-content .content-text {
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+  line-height: 150%;
+  font-family: "Ubuntu";
+}
+/* --- my-garage filter section css start --- */
