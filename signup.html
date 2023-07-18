@@ -1363,69 +1363,9 @@
       </section>
     </header>
     <main class="main-block">
-      <section class="hero-section">
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-              src="./assets/images/home/hero-banner-image.png" alt="First slide"
-              / >
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="./assets/images/home/hero-banner-image-2.png"
-                alt="Second slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="./assets/images/home/hero-banner-image-3.png"
-                alt="Third slide"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="signin-section hide">
-        <div class="form-part">
-          <div class="heading-block">
-            <div>
-              <h3>Sign in</h3>
-            </div>
-            <div>
-              <button class="close-btn">X</button>
-            </div>
-          </div>
-          <div class="content-block">
-            <div class="group">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" />
-            </div>
-            <div class="group">
-                <label for="password">password</label>
-                <input type="password" name="password" id="password" />
-                <a class="recover-link">Forgotten your password?</a>
-            </div>
-            <div>
-                <p class="captcha-text">Please complete the captcha validation below</p>
-            </div>
-            <button class="login-btn">Login</button>
-          </div>
-          <div class="divider">
-            <span class="line"></span>
-            <p>New to Superior Engineering?</p>
-          </div>
-          <div class="new-account">
-            <button class="new-acc-btn">Create your account</button>
-          </div>
-        </div>
-      </section>
+      <a class="back-btn" href="./login.html">
+        <i class="fas fa-chevron-left" style="font-size: 10px"></i>Back
+      </a>
       <section class="signup-section">
         <div class="form-part">
           <div class="heading-block">
@@ -1434,8 +1374,64 @@
           </div>
           <div class="content-block">
             <div class="custom-row">
-              <div class="left-part"></div>
-              <div class="right-part"></div>
+              <div class="left-part">
+                <div class="input-group">
+                  <h6>Your Personal Details</h6>
+                  <fieldset>
+                    <input type="text" placeholder="first name" />
+                    <input type="text" placeholder="last name" />
+                  </fieldset>
+                  <input type="email" placeholder="email" />
+                  <fieldset>
+                    <input type="text" placeholder="phone number" />
+                    <input type="text" placeholder="landine number" />
+                  </fieldset>
+                </div>
+                <div class="input-group">
+                  <h6>Password</h6>
+                  <input type="password" placeholder="password" />
+                  <input type="password" placeholder="password" />
+                </div>
+                <div class="input-group">
+                  <h6>how did you hear about us?</h6>
+                  <select name="reason" id="reason">
+                    <option value="0" selected>Please Select</option>
+                  </select>
+                  <fieldset class="mt-2 flex-row">
+                    <input type="checkbox" id="1"/> <label for="1">I wish to subscribe to the % newsletter</label>
+                  </fieldset>
+                  <fieldset class="flex-row">
+                    <input type="checkbox" id="1"/> <label for="1">I wish to subscribe to Sms marketing</label>
+                  </fieldset>
+                  <fieldset class="flex-row">
+                    <input type="checkbox" id="1"/> <label for="1">My delivery & billing address are same</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="right-part">
+                <div class="input-group">
+                  <h6>address</h6>
+                  <input type="text" placeholder="company" />
+                  <input type="text" placeholder="address 1" />
+                  <select name="city" id="city">
+                    <option value="0" selected>city</option>
+                  </select>
+                  <select name="country" id="country">
+                    <option value="0" selected>country</option>
+                  </select>
+                  <select name="state/region" id="state-region">
+                    <option value="0" selected>state/region</option>
+                  </select>
+                  <input type="text" placeholder="suburb" />
+                  <input type="text" placeholder="Postcode/Zip" />
+                </div>
+                <div class="input-group">
+                  <h6>Captcha</h6>
+                  <label>please complete the captcha validation below</label>
+                  <fieldset style="align-items: flex-start;" class="flex-row"><input type="checkbox" name="3" id="3" /><label for="3">i have read & agreed the <b style="font-weight: 700;">Superior Engineering Privacy Policy</b></label></fieldset>
+                </div>
+                <button class="btn btn-info" style="color: white;background-color: #28A5D8;">Continue</button>
+              </div>
             </div>
           </div>
         </div>
@@ -1467,10 +1463,5 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/select2.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script>
-      $(".carousel").carousel({
-        interval: 15000,
-      });
-    </script>
   </body>
 </html>

@@ -1,52 +1,209 @@
 /* ---- signup section css start ---- */
+.signup-page .main-block {
+  position: relative;
+  padding-top: 82px;
+  background-image: url("../images/home/hero-banner-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signup-page .main-block .back-btn {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 15px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+}
 .signup-page .signup-section {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 82px;
-    left: 0;
-    padding: 50px 100px;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(57, 57, 57, 0.65);
-    z-index: 999999000;
+  display: flex;
+  justify-content: center;
+  padding: 50px 120px;
+  width: 100vw;
+  min-height: 80vh;
+  background-color: rgba(57, 57, 57, 0.65);
+}
+
+.signup-section .form-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -8px 4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+.signup-section .form-part .heading-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+  padding: 25px 0;
+  background-color: #28a5db;
+  color: #fff;
+}
+.signin-section .form-part .heading-block h5 {
+  color: #fff;
+  font-family: "Ubuntu";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  text-transform: capitalize;
+}
+.signin-section .form-part .heading-block p {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.signup-section .form-part .content-block {
+  display: flex;
+  width: 100%;
+  padding: 50px 35px;
+}
+.signup-section .content-block .custom-row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 60% auto;
+  column-gap: 45px;
+}
+.content-block .custom-row .left-part,
+.content-block .custom-row .right-part {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.content-block .input-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.content-block .input-group h6 {
+  color: #393939;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-transform: capitalize;
+}
+.content-block .input-group input,
+.content-block .input-group select {
+  width: 100%;
+  outline: 0;
+  border: 1px solid rgba(57, 57, 57, 0.65);
+  border-radius: 6px !important;
+  padding: 17px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.content-block .input-group input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+.content-block .input-group fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  flex-direction: row;
+  width: 100%;
+}
+.content-block .input-group fieldset label {
+  color: #393939;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+/* ---- signup section css end ---- */
+
+@media (max-width: 1100px) {
+  .signup-page .signin-section {
+    padding: 30px 70px;
   }
-  
-  .signup-section .form-part {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: -8px 4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1080px) {
+  .signup-page .main-block {
+    padding-top: 66px;
   }
-  .signup-section .form-part .heading-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  .signup-page .signin-section .form-part {
     width: 100%;
-    padding: 15px 0;
-    background-color: #28a5db;
-    color: #fff;
   }
-  
-  .signup-section .form-part .content-block {
-    display: flex;
-    width: 100%;
-    padding: 50px 35px;
+  .signin-section .form-part .heading-block > div h3 {
+    font-size: 32px;
+    font-weight: 700;
   }
   .signup-section .content-block .custom-row {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 68% auto;
-    column-gap: 55px;
+    grid-template-columns: 100%;
+    gap: 40px;
   }
-  .content-block .custom-row .left-part {
-    display: flex;
+  .signup-page .main-block .back-btn {
+    top: 85px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-page .signup-section {
+    padding: 50px 85px;
+  }
+}
+@media (max-width: 620px) {
+  .signup-page .main-block {
+    padding-top: 60px;
+  }
+
+  .signup-page .signup-section {
+    padding: 40px 20px;
+  }
+  .signup-page .main-block .back-btn {
+    top: 70px;
+    left: 15px;
+  }
+  .signup-section .form-part .content-block {
+    padding: 20px;
+  }
+  .content-block .input-group fieldset {
     flex-direction: column;
-    gap: 30px;
-    width: 100%;
+    gap: 10px;
   }
-  /* ---- signup section css end ---- */
-  
+  .signup-section .form-part .heading-block {
+    padding: 15px 0;
+  }
+  .content-block .input-group {
+    gap: 10px;
+  }
+  .content-block .custom-row .left-part,
+  .content-block .custom-row .right-part {
+    gap: 25px;
+  }
+  .content-block .input-group input, .content-block .input-group select{
+    font-size: 14px;
+    padding: 12px;
+  }
+  .content-block .input-group fieldset label{
+    font-size: 14px;
+  }
+  .content-block .input-group input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+  }
+}
