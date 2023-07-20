@@ -1,8 +1,9 @@
 .product-list-page {
   background-color: #f6f6f6;
-  overflow-x: hidden;
 }
-
+.product-list-page .main-block {
+  overflow-x: hidden !important;
+}
 .left-part-card {
   border-radius: 6px;
   border: 1px solid rgba(97, 97, 97, 0.5);
@@ -10,7 +11,7 @@
   padding: 32px 0;
 }
 .left-part-card .part {
-  padding: 0px 50px;
+  padding: 0px 50px 5px;
   border-bottom: 1px solid rgba(97, 97, 97, 0.5);
 }
 .left-part-card .part:last-child {

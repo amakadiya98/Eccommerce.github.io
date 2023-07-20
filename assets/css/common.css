@@ -1160,6 +1160,16 @@ span.divider {
 .common-recommended-section .list-block .owl-theme .owl-next {
   right: -45px;
 }
+@media (max-width: 991px) {
+  .main-block .common-recommended-section{
+    padding: 60px 0;
+  }
+}
+@media (max-width: 620px) {
+  .main-block .common-recommended-section{
+    padding: 40px 0;
+  }
+}
 /* ------ commom recommended section css end ----- */
 /* ------ sub header mobile section css start ------ */
 .sub-header-mobile {
