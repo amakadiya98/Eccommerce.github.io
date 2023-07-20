@@ -1,2202 +1,1822 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/home.css" />
-    <link rel="stylesheet" href="./assets/css/product-info.css" />
-    <title>Home</title>
-  </head>
-  <body class="product-info-page">
-    <header class="header-section">
-      <nav>
-        <div class="left-nav">
-          <button class="menu-button">
-            <img src="assets/images/header/menu open.svg" alt="" />
-          </button>
 
-          <button class="close-button hide">
-            <img src="assets/images/header/menu close.svg" alt="" />
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="./assets/css/home.css" />
+  <link rel="stylesheet" href="./assets/css/product-info.css" />
+  <title>Home</title>
+</head>
 
-          <img src="./assets/images/logo.svg" alt="logo" class="logo" />
-        </div>
-        <div class="center-nav">
-          <fieldset id="searchField">
-            <input
-              id="searchInput"
-              type="text"
-              placeholder="Search for products, categories..."
-            />
-            <button>
-              <img src="./assets//images/header/search.svg" alt="search" />
-            </button>
-          </fieldset>
-        </div>
-        <div class="right-nav">
-          <button class="mobile-search">
+<body class="product-info-page">
+  <header class="header-section">
+    <nav>
+      <div class="left-nav">
+        <button class="menu-button">
+          <img src="assets/images/header/menu open.svg" alt="" />
+        </button>
+
+        <button class="close-button hide">
+          <img src="assets/images/header/menu close.svg" alt="" />
+        </button>
+
+        <img src="./assets/images/logo.svg" alt="logo" class="logo" />
+      </div>
+      <div class="center-nav">
+        <fieldset id="searchField">
+          <input id="searchInput" type="text" placeholder="Search for products, categories..." />
+          <button>
             <img src="./assets//images/header/search.svg" alt="search" />
           </button>
-          <select class="country-select"></select>
-          <button class="page-nav-btn mobile-hide-icon" id="myGarage">
-            <img
-              src="./assets/images/header/Garage.svg"
-              alt="Garage"
-              class="mobile-hide"
-            />
-          </button>
-          <button class="page-nav-btn mobile-hide-icon">
-            <img
-              src="./assets/images/header/Store.svg"
-              alt="Store"
-              class="mobile-hide"
-            />
-          </button>
-          <button class="page-nav-btn small-device-hide">
-            <img src="./assets/images/header/Profile.svg" alt="Profile" />
-          </button>
-          <button class="page-nav-btn" id="cartBtn">
-            <div class="cart-img">
-              <img src="./assets/images/header/cart.svg" alt="cart" />
-              <p>0</p>
-            </div>
-          </button>
-        </div>
-        <section class="menu-modal hide common">
-          <div class="mobile-menu-inner">
-            <button class="profile-button">
-              <img
-                src="./assets/images/common/Profile-mobile.svg"
-                alt="profile-icon"
-              />
-            </button>
-            <p class="user-name">Hello, Sign in</p>
+        </fieldset>
+      </div>
+      <div class="right-nav">
+        <button class="mobile-search">
+          <img src="./assets//images/header/search.svg" alt="search" />
+        </button>
+        <select class="country-select"></select>
+        <button class="page-nav-btn mobile-hide-icon" id="myGarage">
+          <img src="./assets/images/header/Garage.svg" alt="Garage" class="mobile-hide" />
+        </button>
+        <button class="page-nav-btn mobile-hide-icon">
+          <img src="./assets/images/header/Store.svg" alt="Store" class="mobile-hide" />
+        </button>
+        <button class="page-nav-btn small-device-hide">
+          <img src="./assets/images/header/Profile.svg" alt="Profile" />
+        </button>
+        <button class="page-nav-btn" id="cartBtn">
+          <div class="cart-img">
+            <img src="./assets/images/header/cart.svg" alt="cart" />
+            <p>0</p>
           </div>
-          <ul class="modal-ul">
-            <li class="main-menu-list">
-              <p>4X4 Suspension</p>
-              <span><i class="fas fa-chevron-right"></i></span>
-              <div class="menu-modal-two common">
-                <div class="mobile-menu-inner">
-                  <button class="profile-button">
-                    <img
-                      src="./assets/images/common/Profile-mobile.svg"
-                      alt="profile-icon"
-                    />
-                  </button>
-                  <p class="user-name">Hello, Sign in</p>
-                </div>
-                <div class="common-title">
-                  <button>
-                    <img
-                      src="./assets/images/header/back-menu-arrow.svg"
-                      alt="back-menu"
-                    />
-                  </button>
-                  <h2>4X4 Suspension</h2>
-                </div>
-                <span class="divider"></span>
-                <ul class="submenu">
-                  <li class="submenu-list">
-                    <p>Radius Army</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu mt-2">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Lift Kits</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu mt-2">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Parts</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu mt-2">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-menu-list">
-              <p>4X4 Driveline</p>
-              <span><i class="fas fa-chevron-right"></i></span>
-              <div class="menu-modal-two common">
-                <div class="mobile-menu-inner">
-                  <button class="profile-button">
-                    <img
-                      src="./assets/images/common/Profile-mobile.svg"
-                      alt="profile-icon"
-                    />
-                  </button>
-                  <p class="user-name">Hello, Sign in</p>
-                </div>
-                <div class="common-title">
-                  <button>
-                    <img
-                      src="./assets/images/header/back-menu-arrow.svg"
-                      alt="back-menu"
-                    />
-                  </button>
-                  <h2>4X4 Driveline</h2>
-                </div>
-                <span class="divider"></span>
-                <ul class="submenu">
-                  <li class="submenu-list">
-                    <p>Radius Army</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu mt-2">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Lift Kits</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Parts</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-menu-list">
-              <p>Merchandise</p>
-            </li>
-            <li class="main-menu-list">
-              <p>Giftcard</p>
-            </li>
-            <li class="main-menu-list">
-              <p>Stockists</p>
-              <span><i class="fas fa-chevron-right"></i></span>
-              <div class="menu-modal-two common">
-                <div class="mobile-menu-inner">
-                  <button class="profile-button">
-                    <img
-                      src="./assets/images/common/Profile-mobile.svg"
-                      alt="profile-icon"
-                    />
-                  </button>
-                  <p class="user-name">Hello, Sign in</p>
-                </div>
-                <div class="common-title">
-                  <button>
-                    <img
-                      src="./assets/images/header/back-menu-arrow.svg"
-                      alt="back-menu"
-                    />
-                  </button>
-                  <h2>4X4 Suspension</h2>
-                </div>
-                <span class="divider"></span>
-                <ul class="submenu">
-                  <li class="submenu-list">
-                    <p>Radius Army</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Lift Kits</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Parts</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-menu-list">
-              <p>Help</p>
-              <span><i class="fas fa-chevron-right"></i></span>
-              <div class="menu-modal-two common">
-                <div class="mobile-menu-inner">
-                  <button class="profile-button">
-                    <img
-                      src="./assets/images/common/Profile-mobile.svg"
-                      alt="profile-icon"
-                    />
-                  </button>
-                  <p class="user-name">Hello, Sign in</p>
-                </div>
-                <div class="common-title">
-                  <button>
-                    <img
-                      src="./assets/images/header/back-menu-arrow.svg"
-                      alt="back-menu"
-                    />
-                  </button>
-                  <h2>4X4 Suspension</h2>
-                </div>
-                <span class="divider"></span>
-                <ul class="submenu">
-                  <li class="submenu-list">
-                    <p>Radius Army</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Lift Kits</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="submenu-list">
-                    <p>Suspension Parts</p>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                    <div class="menu-modal-three common">
-                      <div class="mobile-menu-inner">
-                        <button class="profile-button">
-                          <img
-                            src="./assets/images/common/Profile-mobile.svg"
-                            alt="profile-icon"
-                          />
-                        </button>
-                        <p class="user-name">Hello, Sign in</p>
-                      </div>
-                      <div class="common-title">
-                        <button>
-                          <img
-                            src="./assets/images/header/back-menu-arrow.svg"
-                            alt="back-menu"
-                          />
-                        </button>
-                        <h2>Radius Arms</h2>
-                      </div>
-                      <span class="divider"></span>
-                      <ul class="subsubmenu">
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Air Bags</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Bushes</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Conversion</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link"
-                            >Coil Spacers/Strut Spacers</a
-                          >
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Coil Springs</a>
-                        </li>
-                        <li class="subsub-menu-list">
-                          <a href="#" class="subsub-menu-link">Control Arms</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-menu-list">
-              <p>Contact</p>
-            </li>
-          </ul>
-        </section>
-      </nav>
-      <section class="search-result">
-        <div class="content-wrapper">
-          <div class="row">
-            <div class="col-xxl-9 col-md-7">
-              <div class="left-list-part">
-                <p class="title">Search For <span>Airbag</span></p>
-                <div class="results-list">
-                  <div class="verticle-row">
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 186.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          <b>Air</b>bag protectors/spacers 2-3 Inch lift lower
-                          suitable for Nissan patrol GQ/GU (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 187.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          <b>Air</b>bag protectors/spacers 2-3 Inch lift upper
-                          suitable for Nissan patrol GQ/GU (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="verticle-row">
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 188.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          Brake Line Braided Standard Front Suitable For Ford
-                          Courier (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 189.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          Brake Line Braided 2-3 Inch (50-75mm) Front Suitable
-                          For Hilux SAF (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="verticle-row">
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 186.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          <b>Air</b>bag protectors/spacers 2-3 Inch lift lower
-                          suitable for Nissan patrol GQ/GU (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 187.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          <b>Air</b>bag protectors/spacers 2-3 Inch lift upper
-                          suitable for Nissan patrol GQ/GU (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="verticle-row">
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 188.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          Brake Line Braided Standard Front Suitable For Ford
-                          Courier (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 189.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          Brake Line Braided 2-3 Inch (50-75mm) Front Suitable
-                          For Hilux SAF (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="verticle-row">
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 186.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          <b>Air</b>bag protectors/spacers 2-3 Inch lift lower
-                          suitable for Nissan patrol GQ/GU (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 187.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          <b>Air</b>bag protectors/spacers 2-3 Inch lift upper
-                          suitable for Nissan patrol GQ/GU (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="verticle-row">
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 188.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          Brake Line Braided Standard Front Suitable For Ford
-                          Courier (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="result-item">
-                      <div class="image-block">
-                        <img
-                          src="./assets/images/common/Rectangle 189.svg"
-                          alt="item-image"
-                        />
-                      </div>
-                      <div class="details">
-                        <h6 class="item-title">
-                          Brake Line Braided 2-3 Inch (50-75mm) Front Suitable
-                          For Hilux SAF (pair)
-                        </h6>
-                        <div class="price-part">
-                          <p>$ 130.00</p>
-                          <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-md-5">
-              <div class="right-suggestion-part">
-                <div class="category-list">
-                  <div class="top-heading">
-                    <h6>CATEGORIES</h6>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="#">4x4 Suspension-> Air Bag suspension</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        >4x4 Suspension-> Air thanks and Accessories
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">4x4 Suspension-> 12v Air Compressors</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        >Buggy Racing -> Air Compressors/Thanks And Accessories
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="category-list">
-                  <div class="top-heading">
-                    <h6>SEARCH SUGGESTIONS</h6>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="#">Air Bag 100mm</a>
-                    </li>
-                    <li>
-                      <a href="#">Air Accu</a>
-                    </li>
-                    <li>
-                      <a href="#">Air Bag 200 sr</a>
-                    </li>
-                    <li>
-                      <a href="#">Air Bag Kit dmax </a>
-                    </li>
-                    <li>
-                      <a href="#">Air Bag Colorado </a>
-                    </li>
-                  </ul>
-                </div>
-                <button class="view-all-btn">
-                  View All Results
-                  <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <section class="menu-modal hide common">
+        <div class="mobile-menu-inner">
+          <button class="profile-button">
+            <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+          </button>
+          <p class="user-name">Hello, Sign in</p>
+        </div>
+        <ul class="modal-ul">
+          <li class="main-menu-list">
+            <p>4X4 Suspension</p>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <div class="menu-modal-two common">
+              <div class="mobile-menu-inner">
+                <button class="profile-button">
+                  <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
                 </button>
+                <p class="user-name">Hello, Sign in</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="my-garage">
-        <div class="modal-block rego-modal">
-          <div class="modal-heading">
-            <div class="icon-block">
-              <img
-                src="./assets/images/common/rego-modal-icon.svg"
-                alt="modal-icon"
-              />
-            </div>
-            <div class="tringle"></div>
-            <div class="text-block">
-              <h5>My Garage</h5>
-              <p>Add you vehicles here to shop products hat fit.</p>
-            </div>
-          </div>
-          <div class="sub-heading">Search by Rego</div>
-          <div class="input-block">
-            <div class="input-part">
-              <h6>Let’s start by adding your vehicle.</h6>
-              <p>Step 1. <span>Do you know the rego plate?</span></p>
-              <fieldset>
-                <img
-                  src="./assets/images/common/rego-colored-input.svg"
-                  alt="input-bg"
-                />
-                <input type="text" />
-              </fieldset>
-              <p class="mb-3">Step 2. <span>Enter your state:</span></p>
-              <select name="state" id="state">
-                <option value="0">Select an option</option>
-                <option value="1">state 1</option>
-                <option value="2">state 2</option>
-              </select>
-              <button class="find-btn">Find</button>
-            </div>
-            <div class="action-part">
-              <p>OR</p>
-              <button class="find-btn" id="vehicleBtn">
-                <img
-                  src="./assets/images/common/rego-modal-icon.svg"
-                  alt="btn-icon"
-                />SEARCH BY VEHICLE
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="modal-block vehicle-modal hide">
-          <div class="modal-heading">
-            <div class="icon-block">
-              <img
-                src="./assets/images/common/rego-modal-icon.svg"
-                alt="modal-icon"
-              />
-            </div>
-            <div class="tringle"></div>
-            <div class="text-block">
-              <h5>My Garage</h5>
-              <p>Add you vehicles here to shop products hat fit.</p>
-            </div>
-          </div>
-          <div class="sub-heading">
-            <span>Search by Vehicle</span>
-            <button id="backToRego">
-              <i class="fas fa-arrow-left"></i>Back
-            </button>
-          </div>
-          <div class="input-block">
-            <div class="input-part">
-              <h6>Let’s start by adding your vehicle.</h6>
-              <div class="form-group">
-                <label for="make">Select Make</label>
-                <select name="" id="make">
-                  <option value="0">Make</option>
-                </select>
+              <div class="common-title">
+                <button>
+                  <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                </button>
+                <h2>4X4 Suspension</h2>
               </div>
-              <div class="form-group">
-                <label for="make"><span>*</span>Select Model</label>
-                <select name="" id="make">
-                  <option value="0">Modal</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="make"><span>*</span>Select Series</label>
-                <select name="" id="make">
-                  <option value="0">Series</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="make"><span>*</span>Select Config</label>
-                <select name="" id="make">
-                  <option value="0">Config</option>
-                </select>
-              </div>
-            </div>
-            <div class="action-part">
-              <button class="find-btn">Find</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cart-section">
-        <div class="cart-modal">
-          <div class="cart-head">
-            <h4>Shopping Cart Details</h4>
-            <button id="cart-close">X</button>
-          </div>
-          <div class="cart-content">
-            <div class="items-block">
-              <div class="cart-item">
-                <p class="item-title">
-                  Brown Davis 100 Litre Auxiliary Long Range Fuel Tank Suitable
-                  For Holden Colorado 7 2012 on (Each)
-                </p>
-                <div class="item-details">
-                  <div class="image-block">
-                    <img
-                      src="./assets/images/common/cart-1.png"
-                      alt="cart-img"
-                    />
-                  </div>
-                  <div class="price-block">
-                    <span>$1,705</span>
-                    <div class="action-block">
-                      <div class="quentity">
-                        <button class="minus-btn">-</button>
-                        <p>1</p>
-                        <button class="plus-btn">+</button>
-                      </div>
-                      <button>
-                        <img
-                          src="./assets/images/common/Delete.svg"
-                          alt="delete-icon"
-                        />
+              <span class="divider"></span>
+              <ul class="submenu">
+                <li class="submenu-list">
+                  <p>Radius Army</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
                       </button>
+                      <p class="user-name">Hello, Sign in</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cart-item">
-                <p class="item-title">
-                  Chromoly Rod End/Heim Joint 1/2 Inch (Left Hand Thread) (Each)
-                </p>
-                <div class="item-details">
-                  <div class="image-block">
-                    <img
-                      src="./assets/images/common/cart-2.png"
-                      alt="cart-img"
-                    />
-                  </div>
-                  <div class="price-block">
-                    <span>$68</span>
-                    <div class="action-block">
-                      <div class="quentity">
-                        <button class="minus-btn">-</button>
-                        <p>3</p>
-                        <button class="plus-btn">+</button>
-                      </div>
+                    <div class="common-title">
                       <button>
-                        <img
-                          src="./assets/images/common/Delete.svg"
-                          alt="delete-icon"
-                        />
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
                       </button>
+                      <h2>Radius Arms</h2>
                     </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu mt-2">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </div>
-              <div class="cart-item">
-                <p class="item-title">
-                  Eaton Harrop E-Locker Suitable for Ford Ranger PJ-PK/Mazda
-                  BT-50 UN (Front) (Each)
-                </p>
-                <div class="item-details">
-                  <div class="image-block">
-                    <img
-                      src="./assets/images/common/cart-1.png"
-                      alt="cart-img"
-                    />
-                  </div>
-                  <div class="price-block">
-                    <span>$1,728</span>
-                    <div class="action-block">
-                      <div class="quentity">
-                        <button class="minus-btn">-</button>
-                        <p>1</p>
-                        <button class="plus-btn">+</button>
-                      </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Lift Kits</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
                       <button>
-                        <img
-                          src="./assets/images/common/Delete.svg"
-                          alt="delete-icon"
-                        />
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
                       </button>
+                      <h2>Radius Arms</h2>
                     </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu mt-2">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-price-block">
-              <div class="total-part">
-                <span>Sub Total</span>
-                <p>$3,544</p>
-              </div>
-              <button class="view-cart-btn">
-                <img
-                  src="./assets/images/common/cart-icon.svg"
-                  alt="btn-icon"
-                />
-                <p>View Cart</p>
-              </button>
-              <button class="checkout-btn">Checkout</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sub-header-section">
-        <div class="sub-main-first">
-          <div class="sub-first-conta">
-            <img src="./assets/images/header/rego.svg" alt="Rego" />
-            <p>Search By Rego</p>
-          </div>
-
-          <div class="sub-input-box">
-            <img src="./assets/images/header/input rego.svg" alt="input rego" />
-            <input type="text" />
-          </div>
-
-          <div class="sub-input-select">
-            <select>
-              <option value="">Select Region</option>
-              <option value="">Region 1</option>
-              <option value="">Region 2</option>
-              <option value="">Region 3</option>
-              <option value="">Region 4</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="sub-main-second">
-          <div class="sub-second-first">
-            <p>Find</p>
-            <span>OR</span>
-          </div>
-          <div class="sub-second-second">
-            <img src="./assets/images/header/vehicle.svg" alt="vehicle" />
-            <p>Search By Vehicle</p>
-          </div>
-        </div>
-      </section>
-      <section class="sub-header-mobile">
-        <div class="mobile-sub-first">
-          <button class="mobile-common-btn mobile-rego active" id="rego">
-            <img src="./assets/images/header/rego.svg" alt="Rego" />
-            <p>Search By Rego</p>
-          </button>
-          <span class="h-line"></span>
-          <button class="mobile-common-btn mobile-vehicle" id="vehicle">
-            <img src="./assets/images/header/vehicle.svg" alt="vehicle" />
-            <p>Search By Vehicle</p>
-          </button>
-        </div>
-        <div class="mobile-sub-second">
-          <button class="primary-btn">Reset</button>
-          <button class="primary-btn with-icon" id="my-garagebtn">
-            <img src="./assets/images/header/vehicle.svg" alt="vehicle" />
-            <p>MY GARAGE</p>
-          </button>
-        </div>
-        <div class="form-block rego">
-          <div class="input-block">
-            <div class="input-group">
-              <select name="Rego" id="rego" class="rego-select">
-                <option value="0">REGO Number:</option>
-                <option value="1">rego 1</option>
-                <option value="2">rego 2</option>
-                <option value="3">rego 3</option>
-                <option value="4">rego 4</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <select name="Region" id="region" class="region-select">
-                <option value="0">--Select Region--</option>
-                <option value="1">rego 1</option>
-                <option value="2">rego 2</option>
-                <option value="3">rego 3</option>
-                <option value="4">rego 4</option>
-              </select>
-            </div>
-            <button class="primary-btn">submit</button>
-          </div>
-        </div>
-        <div class="form-block vehicle">
-          <div class="input-block">
-            <div class="input-group">
-              <input type="text" placeholder="MAKE :" />
-            </div>
-            <div class="input-group">
-              <select class="rego-select">
-                <option value="0">MODEL:</option>
-                <option value="1">rego 1</option>
-                <option value="2">rego 2</option>
-                <option value="3">rego 3</option>
-                <option value="4">rego 4</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <select class="rego-select">
-                <option value="0">SERIES:</option>
-                <option value="1">rego 1</option>
-                <option value="2">rego 2</option>
-                <option value="3">rego 3</option>
-                <option value="4">rego 4</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <select class="region-select">
-                <option value="0">CONFIG</option>
-                <option value="1">rego 1</option>
-                <option value="2">rego 2</option>
-                <option value="3">rego 3</option>
-                <option value="4">rego 4</option>
-              </select>
-            </div>
-            <button class="primary-btn">submit</button>
-          </div>
-        </div>
-      </section>
-      <section class="my-garage-filter-section">
-        <div class="filter-modal without-login">
-          <div class="modal-heading">
-            <h5>Select to app.(Go to MYy Garage)</h5>
-            <button class="filter-modal-close">X</button>
-          </div>
-          <div class="filter-content">
-            <p class="content-text">
-              You have already saved this filter. Below is the list of filters.
-              Below is the list of filters,
-            </p>
-            <fieldset>
-              <div class="input-group">
-                <label>Email</label>
-                <input type="text" />
-              </div>
-              <div class="input-group">
-                <label>Password</label>
-                <input type="password" />
-              </div>
-            </fieldset>
-            <div class="d-flex justify-content-end">
-              <button class="btn btn-info cyan-btn" id="filter-login-btn">
-                login
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="filter-modal with-login hide">
-          <div class="modal-heading">
-            <h5>Select to app.(Go to MYy Garage)</h5>
-            <button class="filter-modal-close">X</button>
-          </div>
-          <div class="filter-content">
-            <p class="content-text">
-              You have already saved this filter. Below is the list of filters.
-              Below is the list of filters,
-            </p>
-            <fieldset>
-              <div class="input-group">
-                <input type="text" />
-                <button class="btn btn-info cyan-btn">Add</button>
-              </div>
-              <ul>
-                <li>
-                  <p>category_1</p>
-                  <button class="btn btn-transparent">
-                    <img src="./assets/images/common/Delete.svg" alt="delete" />
-                  </button>
                 </li>
-                <li>
-                  <p>category_2</p>
-                  <button class="btn btn-transparent">
-                    <img src="./assets/images/common/Delete.svg" alt="delete" />
-                  </button>
-                </li>
-                <li>
-                  <p>category_3</p>
-                  <button class="btn btn-transparent">
-                    <img src="./assets/images/common/Delete.svg" alt="delete" />
-                  </button>
-                </li>
-                <li>
-                  <p>category_4</p>
-                  <button class="btn btn-transparent">
-                    <img src="./assets/images/common/Delete.svg" alt="delete" />
-                  </button>
+                <li class="submenu-list">
+                  <p>Suspension Parts</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu mt-2">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
+            </div>
+          </li>
+          <li class="main-menu-list">
+            <p>4X4 Driveline</p>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <div class="menu-modal-two common">
+              <div class="mobile-menu-inner">
+                <button class="profile-button">
+                  <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                </button>
+                <p class="user-name">Hello, Sign in</p>
+              </div>
+              <div class="common-title">
+                <button>
+                  <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                </button>
+                <h2>4X4 Driveline</h2>
+              </div>
+              <span class="divider"></span>
+              <ul class="submenu">
+                <li class="submenu-list">
+                  <p>Radius Army</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu mt-2">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Lift Kits</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Parts</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-list">
+            <p>Merchandise</p>
+          </li>
+          <li class="main-menu-list">
+            <p>Giftcard</p>
+          </li>
+          <li class="main-menu-list">
+            <p>Stockists</p>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <div class="menu-modal-two common">
+              <div class="mobile-menu-inner">
+                <button class="profile-button">
+                  <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                </button>
+                <p class="user-name">Hello, Sign in</p>
+              </div>
+              <div class="common-title">
+                <button>
+                  <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                </button>
+                <h2>4X4 Suspension</h2>
+              </div>
+              <span class="divider"></span>
+              <ul class="submenu">
+                <li class="submenu-list">
+                  <p>Radius Army</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Lift Kits</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Parts</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-list">
+            <p>Help</p>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <div class="menu-modal-two common">
+              <div class="mobile-menu-inner">
+                <button class="profile-button">
+                  <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                </button>
+                <p class="user-name">Hello, Sign in</p>
+              </div>
+              <div class="common-title">
+                <button>
+                  <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                </button>
+                <h2>4X4 Suspension</h2>
+              </div>
+              <span class="divider"></span>
+              <ul class="submenu">
+                <li class="submenu-list">
+                  <p>Radius Army</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Lift Kits</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="submenu-list">
+                  <p>Suspension Parts</p>
+                  <span><i class="fas fa-chevron-right"></i></span>
+                  <div class="menu-modal-three common">
+                    <div class="mobile-menu-inner">
+                      <button class="profile-button">
+                        <img src="./assets/images/common/Profile-mobile.svg" alt="profile-icon" />
+                      </button>
+                      <p class="user-name">Hello, Sign in</p>
+                    </div>
+                    <div class="common-title">
+                      <button>
+                        <img src="./assets/images/header/back-menu-arrow.svg" alt="back-menu" />
+                      </button>
+                      <h2>Radius Arms</h2>
+                    </div>
+                    <span class="divider"></span>
+                    <ul class="subsubmenu">
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Air Bags</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Bushes</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Conversion</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Spacers/Strut Spacers</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Coil Springs</a>
+                      </li>
+                      <li class="subsub-menu-list">
+                        <a href="#" class="subsub-menu-link">Control Arms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-list">
+            <p>Contact</p>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="search-result">
+      <div class="content-wrapper">
+        <div class="row">
+          <div class="col-xxl-9 col-md-7">
+            <div class="left-list-part">
+              <p class="title">Search For <span>Airbag</span></p>
+              <div class="results-list">
+                <div class="verticle-row">
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 186.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        <b>Air</b>bag protectors/spacers 2-3 Inch lift lower
+                        suitable for Nissan patrol GQ/GU (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 187.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        <b>Air</b>bag protectors/spacers 2-3 Inch lift upper
+                        suitable for Nissan patrol GQ/GU (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="verticle-row">
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 188.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        Brake Line Braided Standard Front Suitable For Ford
+                        Courier (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 189.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        Brake Line Braided 2-3 Inch (50-75mm) Front Suitable
+                        For Hilux SAF (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="verticle-row">
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 186.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        <b>Air</b>bag protectors/spacers 2-3 Inch lift lower
+                        suitable for Nissan patrol GQ/GU (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 187.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        <b>Air</b>bag protectors/spacers 2-3 Inch lift upper
+                        suitable for Nissan patrol GQ/GU (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="verticle-row">
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 188.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        Brake Line Braided Standard Front Suitable For Ford
+                        Courier (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 189.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        Brake Line Braided 2-3 Inch (50-75mm) Front Suitable
+                        For Hilux SAF (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="verticle-row">
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 186.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        <b>Air</b>bag protectors/spacers 2-3 Inch lift lower
+                        suitable for Nissan patrol GQ/GU (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 187.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        <b>Air</b>bag protectors/spacers 2-3 Inch lift upper
+                        suitable for Nissan patrol GQ/GU (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="verticle-row">
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 188.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        Brake Line Braided Standard Front Suitable For Ford
+                        Courier (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="image-block">
+                      <img src="./assets/images/common/Rectangle 189.svg" alt="item-image" />
+                    </div>
+                    <div class="details">
+                      <h6 class="item-title">
+                        Brake Line Braided 2-3 Inch (50-75mm) Front Suitable
+                        For Hilux SAF (pair)
+                      </h6>
+                      <div class="price-part">
+                        <p>$ 130.00</p>
+                        <button class="cart-btn">
+                          <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-md-5">
+            <div class="right-suggestion-part">
+              <div class="category-list">
+                <div class="top-heading">
+                  <h6>CATEGORIES</h6>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">4x4 Suspension-> Air Bag suspension</a>
+                  </li>
+                  <li>
+                    <a href="#">4x4 Suspension-> Air thanks and Accessories
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">4x4 Suspension-> 12v Air Compressors</a>
+                  </li>
+                  <li>
+                    <a href="#">Buggy Racing -> Air Compressors/Thanks And Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category-list">
+                <div class="top-heading">
+                  <h6>SEARCH SUGGESTIONS</h6>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Air Bag 100mm</a>
+                  </li>
+                  <li>
+                    <a href="#">Air Accu</a>
+                  </li>
+                  <li>
+                    <a href="#">Air Bag 200 sr</a>
+                  </li>
+                  <li>
+                    <a href="#">Air Bag Kit dmax </a>
+                  </li>
+                  <li>
+                    <a href="#">Air Bag Colorado </a>
+                  </li>
+                </ul>
+              </div>
+              <button class="view-all-btn">
+                View All Results
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-garage">
+      <div class="modal-block rego-modal">
+        <div class="modal-heading">
+          <div class="icon-block">
+            <img src="./assets/images/common/rego-modal-icon.svg" alt="modal-icon" />
+          </div>
+          <div class="tringle"></div>
+          <div class="text-block">
+            <h5>My Garage</h5>
+            <p>Add you vehicles here to shop products hat fit.</p>
+          </div>
+        </div>
+        <div class="sub-heading">Search by Rego</div>
+        <div class="input-block">
+          <div class="input-part">
+            <h6>Let’s start by adding your vehicle.</h6>
+            <p>Step 1. <span>Do you know the rego plate?</span></p>
+            <fieldset>
+              <img src="./assets/images/common/rego-colored-input.svg" alt="input-bg" />
+              <input type="text" />
             </fieldset>
+            <p class="mb-3">Step 2. <span>Enter your state:</span></p>
+            <select name="state" id="state">
+              <option value="0">Select an option</option>
+              <option value="1">state 1</option>
+              <option value="2">state 2</option>
+            </select>
+            <button class="find-btn">Find</button>
           </div>
-        </div>
-      </section>
-    </header>
-    <main class="main-block">
-      <section class="content-section">
-        <div class="breadcrumbs-part d-flex">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">HOME</a></li>
-              <li class="breadcrumb-item"><a href="#">4X4 SUSPENSION</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                AIR BAGS
-              </li>
-            </ol>
-          </nav>
-        </div>
-        <div class="custom-row">
-          <div class="left-part">
-            <div class="tab-content" id="pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="pills-home"
-                role="tabpanel"
-                aria-labelledby="pills-home-tab"
-                tabindex="0"
-              >
-                <img
-                  src="./assets/images/productList/product1.png"
-                  alt="product-img"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-profile"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-                tabindex="0"
-              >
-                <img
-                  src="./assets/images/productList/product1.png"
-                  alt="product-img"
-                />
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-contact"
-                role="tabpanel"
-                aria-labelledby="pills-contact-tab"
-                tabindex="0"
-              >
-                <img
-                  src="./assets/images/productList/product1.png"
-                  alt="product-img"
-                />
-              </div>
-            </div>
-            <ul class="nav mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-home"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-home"
-                  aria-selected="true"
-                >
-                  <img
-                    src="./assets/images/productList/product1.png"
-                    alt="product-img"
-                  />
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                >
-                  <img
-                    src="./assets/images/productList/product1.png"
-                    alt="product-img"
-                  />
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-contact-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
-                >
-                  <img
-                    src="./assets/images/productList/product1.png"
-                    alt="product-img"
-                  />
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="right-part">
-            <h4 class="prod-title">
-              AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR NISSAN
-              PATROL GQ/GU (PAIR)
-            </h4>
-            <span class="prod-details"
-              >These spacers are used when installing airbags with Superior coil
-              retainers fitted.</span
-            >
-            <h5 class="prod-id">Product ID: 8239</h5>
-            <span class="stock-type">Low stock</span>
-            <div class="ratings">
-              <i class="fa fa-star rating-color"></i>
-              <i class="fa fa-star rating-color"></i>
-              <i class="fa fa-star rating-color"></i>
-              <i class="fa fa-star"></i>
-            </div>
-            <span class="notification"
-              >(If there are any supply issues on this product, we will contact
-              you after your order is placed)</span
-            >
-            <p class="prod-price">$130.00 (Pair)</p>
-            <span class="prod-price-label">Supply Only Price</span>
-            <div class="quantity-group">
-              <button>-</button>
-              <span>2</span>
-              <button>+</button>
-            </div>
-            <button class="cart-btn">
-              <img src="./assets/images/common/cart-icon.svg" alt="cart-icon" />
-              <span>Add To Cart</span>
+          <div class="action-part">
+            <p>OR</p>
+            <button class="find-btn" id="vehicleBtn">
+              <img src="./assets/images/common/rego-modal-icon.svg" alt="btn-icon" />SEARCH BY VEHICLE
             </button>
-            <div class="estimate">
-              <p>Estimate Shipping</p>
-              <div class="input-grp">
-                <input type="text" />
-                <button class="btn btn-outline-info">CHECK</button>
-              </div>
-            </div>
-            <ul class="payment-options">
-              <li class="payment-type">
-                <fieldset>
-                  <button>
-                    <img
-                      src="./assets/images/productInfo/i-rounded.svg"
-                      alt="i-details"
-                    />
-                  </button>
-                  <p>or 4 fortnightly payments of $ 32.50 with more info</p>
-                </fieldset>
-                <div class="image-block">
-                  <img
-                    src="./assets/images/productInfo/afterpay.svg"
-                    alt="afterpay"
-                  />
-                </div>
-              </li>
-              <li class="payment-type">
-                <fieldset>
-                  <button>
-                    <img
-                      src="./assets/images/productInfo/i-rounded.svg"
-                      alt="i-details"
-                    />
-                  </button>
-                  <p>5 fortnightly payments of $26.00 with</p>
-                </fieldset>
-                <div class="image-block">
-                  <img src="./assets/images/productInfo/humm.svg" alt="humm" />
-                </div>
-              </li>
-              <li class="payment-type">
-                <fieldset>
-                  <button>
-                    <img
-                      src="./assets/images/productInfo/i-rounded.svg"
-                      alt="i-details"
-                    />
-                  </button>
-                  <p>pay in 4 interest-free payments of $32.50</p>
-                </fieldset>
-                <div class="image-block">
-                  <img
-                    src="./assets/images/productInfo/paypal.svg"
-                    alt="paypal"
-                  />
-                </div>
-              </li>
-              <li class="payment-type">
-                <fieldset>
-                  <button>
-                    <img
-                      src="./assets/images/productInfo/i-rounded.svg"
-                      alt="i-details"
-                    />
-                  </button>
-                  <p>buy now, pay later</p>
-                </fieldset>
-                <div class="image-block">
-                  <img src="./assets/images/productInfo/zip.svg" alt="zip" />
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
-      </section>
-      <section class="product-details">
-        <div class="tab-parent">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      </div>
+      <div class="modal-block vehicle-modal hide">
+        <div class="modal-heading">
+          <div class="icon-block">
+            <img src="./assets/images/common/rego-modal-icon.svg" alt="modal-icon" />
+          </div>
+          <div class="tringle"></div>
+          <div class="text-block">
+            <h5>My Garage</h5>
+            <p>Add you vehicles here to shop products hat fit.</p>
+          </div>
+        </div>
+        <div class="sub-heading">
+          <span>Search by Vehicle</span>
+          <button id="backToRego">
+            <i class="fas fa-arrow-left"></i>Back
+          </button>
+        </div>
+        <div class="input-block">
+          <div class="input-part">
+            <h6>Let’s start by adding your vehicle.</h6>
+            <div class="form-group">
+              <label for="make">Select Make</label>
+              <select name="" id="make">
+                <option value="0">Make</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="make"><span>*</span>Select Model</label>
+              <select name="" id="make">
+                <option value="0">Modal</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="make"><span>*</span>Select Series</label>
+              <select name="" id="make">
+                <option value="0">Series</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="make"><span>*</span>Select Config</label>
+              <select name="" id="make">
+                <option value="0">Config</option>
+              </select>
+            </div>
+          </div>
+          <div class="action-part">
+            <button class="find-btn">Find</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cart-section">
+      <div class="cart-modal">
+        <div class="cart-head">
+          <h4>Shopping Cart Details</h4>
+          <button id="cart-close">X</button>
+        </div>
+        <div class="cart-content">
+          <div class="items-block">
+            <div class="cart-item">
+              <p class="item-title">
+                Brown Davis 100 Litre Auxiliary Long Range Fuel Tank Suitable
+                For Holden Colorado 7 2012 on (Each)
+              </p>
+              <div class="item-details">
+                <div class="image-block">
+                  <img src="./assets/images/common/cart-1.png" alt="cart-img" />
+                </div>
+                <div class="price-block">
+                  <span>$1,705</span>
+                  <div class="action-block">
+                    <div class="quentity">
+                      <button class="minus-btn">-</button>
+                      <p>1</p>
+                      <button class="plus-btn">+</button>
+                    </div>
+                    <button>
+                      <img src="./assets/images/common/Delete.svg" alt="delete-icon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <p class="item-title">
+                Chromoly Rod End/Heim Joint 1/2 Inch (Left Hand Thread) (Each)
+              </p>
+              <div class="item-details">
+                <div class="image-block">
+                  <img src="./assets/images/common/cart-2.png" alt="cart-img" />
+                </div>
+                <div class="price-block">
+                  <span>$68</span>
+                  <div class="action-block">
+                    <div class="quentity">
+                      <button class="minus-btn">-</button>
+                      <p>3</p>
+                      <button class="plus-btn">+</button>
+                    </div>
+                    <button>
+                      <img src="./assets/images/common/Delete.svg" alt="delete-icon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <p class="item-title">
+                Eaton Harrop E-Locker Suitable for Ford Ranger PJ-PK/Mazda
+                BT-50 UN (Front) (Each)
+              </p>
+              <div class="item-details">
+                <div class="image-block">
+                  <img src="./assets/images/common/cart-1.png" alt="cart-img" />
+                </div>
+                <div class="price-block">
+                  <span>$1,728</span>
+                  <div class="action-block">
+                    <div class="quentity">
+                      <button class="minus-btn">-</button>
+                      <p>1</p>
+                      <button class="plus-btn">+</button>
+                    </div>
+                    <button>
+                      <img src="./assets/images/common/Delete.svg" alt="delete-icon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-price-block">
+            <div class="total-part">
+              <span>Sub Total</span>
+              <p>$3,544</p>
+            </div>
+            <button class="view-cart-btn">
+              <img src="./assets/images/common/cart-icon.svg" alt="btn-icon" />
+              <p>View Cart</p>
+            </button>
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sub-header-section">
+      <div class="sub-main-first">
+        <div class="sub-first-conta">
+          <img src="./assets/images/header/rego.svg" alt="Rego" />
+          <p>Search By Rego</p>
+        </div>
+
+        <div class="sub-input-box">
+          <img src="./assets/images/header/input rego.svg" alt="input rego" />
+          <input type="text" />
+        </div>
+
+        <div class="sub-input-select">
+          <select>
+            <option value="">Select Region</option>
+            <option value="">Region 1</option>
+            <option value="">Region 2</option>
+            <option value="">Region 3</option>
+            <option value="">Region 4</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sub-main-second">
+        <div class="sub-second-first">
+          <p>Find</p>
+          <span>OR</span>
+        </div>
+        <div class="sub-second-second">
+          <img src="./assets/images/header/vehicle.svg" alt="vehicle" />
+          <p>Search By Vehicle</p>
+        </div>
+      </div>
+    </section>
+    <section class="sub-header-mobile">
+      <div class="mobile-sub-first">
+        <button class="mobile-common-btn mobile-rego active" id="rego">
+          <img src="./assets/images/header/rego.svg" alt="Rego" />
+          <p>Search By Rego</p>
+        </button>
+        <span class="h-line"></span>
+        <button class="mobile-common-btn mobile-vehicle" id="vehicle">
+          <img src="./assets/images/header/vehicle.svg" alt="vehicle" />
+          <p>Search By Vehicle</p>
+        </button>
+      </div>
+      <div class="mobile-sub-second">
+        <button class="primary-btn">Reset</button>
+        <button class="primary-btn with-icon" id="my-garagebtn">
+          <img src="./assets/images/header/vehicle.svg" alt="vehicle" />
+          <p>MY GARAGE</p>
+        </button>
+      </div>
+      <div class="form-block rego">
+        <div class="input-block">
+          <div class="input-group">
+            <select name="Rego" id="rego" class="rego-select">
+              <option value="0">REGO Number:</option>
+              <option value="1">rego 1</option>
+              <option value="2">rego 2</option>
+              <option value="3">rego 3</option>
+              <option value="4">rego 4</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <select name="Region" id="region" class="region-select">
+              <option value="0">--Select Region--</option>
+              <option value="1">rego 1</option>
+              <option value="2">rego 2</option>
+              <option value="3">rego 3</option>
+              <option value="4">rego 4</option>
+            </select>
+          </div>
+          <button class="primary-btn">submit</button>
+        </div>
+      </div>
+      <div class="form-block vehicle">
+        <div class="input-block">
+          <div class="input-group">
+            <input type="text" placeholder="MAKE :" />
+          </div>
+          <div class="input-group">
+            <select class="rego-select">
+              <option value="0">MODEL:</option>
+              <option value="1">rego 1</option>
+              <option value="2">rego 2</option>
+              <option value="3">rego 3</option>
+              <option value="4">rego 4</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <select class="rego-select">
+              <option value="0">SERIES:</option>
+              <option value="1">rego 1</option>
+              <option value="2">rego 2</option>
+              <option value="3">rego 3</option>
+              <option value="4">rego 4</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <select class="region-select">
+              <option value="0">CONFIG</option>
+              <option value="1">rego 1</option>
+              <option value="2">rego 2</option>
+              <option value="3">rego 3</option>
+              <option value="4">rego 4</option>
+            </select>
+          </div>
+          <button class="primary-btn">submit</button>
+        </div>
+      </div>
+    </section>
+    <section class="my-garage-filter-section">
+      <div class="filter-modal without-login">
+        <div class="modal-heading">
+          <h5>Select to app.(Go to MYy Garage)</h5>
+          <button class="filter-modal-close">X</button>
+        </div>
+        <div class="filter-content">
+          <p class="content-text">
+            You have already saved this filter. Below is the list of filters.
+            Below is the list of filters,
+          </p>
+          <fieldset>
+            <div class="input-group">
+              <label>Email</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" />
+            </div>
+          </fieldset>
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-info cyan-btn" id="filter-login-btn">
+              login
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-modal with-login hide">
+        <div class="modal-heading">
+          <h5>Select to app.(Go to MYy Garage)</h5>
+          <button class="filter-modal-close">X</button>
+        </div>
+        <div class="filter-content">
+          <p class="content-text">
+            You have already saved this filter. Below is the list of filters.
+            Below is the list of filters,
+          </p>
+          <fieldset>
+            <div class="input-group">
+              <input type="text" />
+              <button class="btn btn-info cyan-btn">Add</button>
+            </div>
+            <ul>
+              <li>
+                <p>category_1</p>
+                <button class="btn btn-transparent">
+                  <img src="./assets/images/common/Delete.svg" alt="delete" />
+                </button>
+              </li>
+              <li>
+                <p>category_2</p>
+                <button class="btn btn-transparent">
+                  <img src="./assets/images/common/Delete.svg" alt="delete" />
+                </button>
+              </li>
+              <li>
+                <p>category_3</p>
+                <button class="btn btn-transparent">
+                  <img src="./assets/images/common/Delete.svg" alt="delete" />
+                </button>
+              </li>
+              <li>
+                <p>category_4</p>
+                <button class="btn btn-transparent">
+                  <img src="./assets/images/common/Delete.svg" alt="delete" />
+                </button>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="main-block">
+    <section class="content-section">
+      <div class="breadcrumbs-part d-flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">HOME</a></li>
+            <li class="breadcrumb-item"><a href="#">4X4 SUSPENSION</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              AIR BAGS
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="custom-row">
+        <div class="left-part">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+              tabindex="0">
+              <img src="./assets/images/productList/product1.png" alt="product-img" />
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+              tabindex="0">
+              <img src="./assets/images/productList/product1.png" alt="product-img" />
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+              tabindex="0">
+              <img src="./assets/images/productList/product1.png" alt="product-img" />
+            </div>
+          </div>
+          <ul class="nav mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="pills-home-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-home"
-                type="button"
-                role="tab"
-                aria-controls="pills-home"
-                aria-selected="true"
-              >
-                Product Info
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <img src="./assets/images/productList/product1.png" alt="product-img" />
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-profile-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-profile"
-                type="button"
-                role="tab"
-                aria-controls="pills-profile"
-                aria-selected="false"
-              >
-                Disclaimer
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <img src="./assets/images/productList/product1.png" alt="product-img" />
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                FAQ/ Extra info
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                <img src="./assets/images/productList/product1.png" alt="product-img" />
               </button>
             </li>
           </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-home"
-              role="tabpanel"
-              aria-labelledby="pills-home-tab"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-profile"
-              role="tabpanel"
-              aria-labelledby="pills-profile-tab"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-contact"
-              role="tabpanel"
-              aria-labelledby="pills-contact-tab"
-            >
-              ...
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="common-recommended-section">
-        <div class="custom-container">
-          <div class="section-heading-block">
-            <h3 class="section-heading-text">Recommended for you</h3>
-            <span class="head-text-underline"></span>
+        <div class="right-part">
+          <h4 class="prod-title">
+            AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR NISSAN
+            PATROL GQ/GU (PAIR)
+          </h4>
+          <span class="prod-details">These spacers are used when installing airbags with Superior coil
+            retainers fitted.</span>
+          <h5 class="prod-id">Product ID: 8239</h5>
+          <span class="stock-type">Low stock</span>
+          <div class="ratings">
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star"></i>
           </div>
-          <!-- slider-part -->
-          <div class="list-block">
-            <div class="owl-carousel owl-theme">
-              <div class="item-box">
-                <a href="#" class="product-list-card slider-product">
-                  <div class="ribbon">Low Stock</div>
-                  <div class="image-part">
-                    <img
-                      src="./assets/images/common/recommended-1.svg"
-                      alt="product"
-                    />
-                  </div>
-                  <div class="product-info-body">
-                    <p>
-                      AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
-                      NISSAN PATROL GQ/GU (PAIR)
-                    </p>
-                    <h6>$130.00</h6>
-                  </div>
-                  <div class="product-add-btn">
-                    <img src="./assets/images/cart-white.svg" class="me-2" />add
-                    to Cart
-                  </div>
-                </a>
-              </div>
-              <div class="item-box">
-                <a href="#" class="product-list-card slider-product">
-                  <div class="ribbon highstock">High Stock</div>
-                  <div class="image-part">
-                    <img
-                      src="./assets/images/common/recommended-2.svg"
-                      alt="product"
-                    />
-                  </div>
-                  <div class="product-info-body">
-                    <p>
-                      AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
-                      NISSAN PATROL GQ/GU (PAIR)
-                    </p>
-                    <h6>$130.00</h6>
-                  </div>
-                  <div class="product-add-btn">
-                    <img src="./assets/images/cart-white.svg" class="me-2" />add
-                    to Cart
-                  </div>
-                </a>
-              </div>
-              <div class="item-box">
-                <a href="#" class="product-list-card slider-product">
-                  <div class="ribbon">Low Stock</div>
-                  <div class="image-part">
-                    <img
-                      src="./assets/images/common/recommended-3.svg"
-                      alt="product"
-                    />
-                  </div>
-                  <div class="product-info-body">
-                    <p>
-                      AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
-                      NISSAN PATROL GQ/GU (PAIR)
-                    </p>
-                    <h6>$130.00</h6>
-                  </div>
-                  <div class="product-add-btn">
-                    <img src="./assets/images/cart-white.svg" class="me-2" />add
-                    to Cart
-                  </div>
-                </a>
-              </div>
-              <div class="item-box">
-                <a href="#" class="product-list-card slider-product">
-                  <div class="ribbon">Low Stock</div>
-                  <div class="image-part">
-                    <img
-                      src="./assets/images/common/recommended-4.svg"
-                      alt="product"
-                    />
-                  </div>
-                  <div class="product-info-body">
-                    <p>
-                      AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
-                      NISSAN PATROL GQ/GU (PAIR)
-                    </p>
-                    <h6>$130.00</h6>
-                  </div>
-                  <div class="product-add-btn">
-                    <img src="./assets/images/cart-white.svg" class="me-2" />add
-                    to Cart
-                  </div>
-                </a>
-              </div>
+          <span class="notification">(If there are any supply issues on this product, we will contact
+            you after your order is placed)</span>
+          <p class="prod-price">$130.00 (Pair)</p>
+          <span class="prod-price-label">Supply Only Price</span>
+          <div class="quantity-group">
+            <button>-</button>
+            <span>2</span>
+            <button>+</button>
+          </div>
+          <button class="cart-btn">
+            <img src="./assets/images/common/cart-icon.svg" alt="cart-icon" />
+            <span>Add To Cart</span>
+          </button>
+          <div class="estimate">
+            <p>Estimate Shipping</p>
+            <div class="input-grp">
+              <input type="text" />
+              <button class="btn btn-outline-info">CHECK</button>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer-section">
-      <div class="top-part">
-        <div class="logo-part">
-          <a class="logo" href="./index.html">
-            <img src="./assets/images/logo.svg" alt="superior-logo" />
-          </a>
-          <div class="line"></div>
-        </div>
-        <div class="content-part">
-          <div class="row custom-row">
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="product-part">
-                <h5 class="category-heading">4X4 SUSPENSION</h5>
-                <ul class="category-list">
-                  <li><a href="#" class="category-link">Radius Arms</a></li>
-                  <li><a href="#" class="category-link">Air Bags</a></li>
-                  <li><a href="#" class="category-link">Bushes</a></li>
-                  <li><a href="#" class="category-link">Coil Conversion</a></li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >coil Spacers/Struct Spacers</a
-                    >
-                  </li>
-                  <li><a href="#" class="category-link">coil Springs</a></li>
-                  <li><a href="#" class="category-link">Control Arms</a></li>
-                  <li>
-                    <a href="#" class="category-link">Suspension Lift kits</a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Gym/gcm Upgrades</a>
-                  </li>
-                  <li><a href="#" class="category-link">Leaf Springs</a></li>
-                </ul>
-                <a class="more-btn" href="#">PLUS MORE...</a>
+          <ul class="payment-options">
+            <li class="payment-type">
+              <fieldset>
+                <button>
+                  <img src="./assets/images/productInfo/i-rounded.svg" alt="i-details" />
+                </button>
+                <p>or 4 fortnightly payments of $ 32.50 with more info</p>
+              </fieldset>
+              <div class="image-block">
+                <img src="./assets/images/productInfo/afterpay.svg" alt="afterpay" />
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="product-part">
-                <h5 class="category-heading">4x4 DRIVELINE</h5>
-                <ul class="category-list">
-                  <li>
-                    <a href="#" class="category-link"
-                      >Brake Line & Companents</a
-                    >
-                  </li>
-                  <li><a href="#" class="category-link">Axles & Cv's</a></li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >Brake Line & Compone...</a
-                    >
-                  </li>
-                  <li><a href="#" class="category-link">Diff Gears sets</a></li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >Diff housing & Accessories</a
-                    >
-                  </li>
-                  <li><a href="#" class="category-link">Steering</a></li>
-                  <li>
-                    <a href="#" class="category-link">Diff Rebult Kits </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Driveline </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Lockers</a>
-                  </li>
-                </ul>
-                <a class="more-btn" href="#">PLUS MORE...</a>
+            </li>
+            <li class="payment-type">
+              <fieldset>
+                <button>
+                  <img src="./assets/images/productInfo/i-rounded.svg" alt="i-details" />
+                </button>
+                <p>5 fortnightly payments of $26.00 with</p>
+              </fieldset>
+              <div class="image-block">
+                <img src="./assets/images/productInfo/humm.svg" alt="humm" />
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="product-part">
-                <h5 class="category-heading">4x4 ACCESSORIES</h5>
-                <ul class="category-list">
-                  <li>
-                    <a href="#" class="category-link">Bull Bars </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Air Compressors 12v </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >Air tanks & Accessories
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Awinings/tents/swags </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >Batteries & Dual Battery A...
-                    </a>
-                  </li>
-                  <li><a href="#" class="category-link">Body Lifts </a></li>
-                  <li>
-                    <a href="#" class="category-link">Camping Accessories </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Camping Lights </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Car Care Products</a>
-                  </li>
-                </ul>
-                <a class="more-btn" href="#">PLUS MORE...</a>
+            </li>
+            <li class="payment-type">
+              <fieldset>
+                <button>
+                  <img src="./assets/images/productInfo/i-rounded.svg" alt="i-details" />
+                </button>
+                <p>pay in 4 interest-free payments of $32.50</p>
+              </fieldset>
+              <div class="image-block">
+                <img src="./assets/images/productInfo/paypal.svg" alt="paypal" />
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12">
-              <div class="product-part">
-                <h5 class="category-heading">BUGGY/RACING</h5>
-                <ul class="category-list">
-                  <li>
-                    <a href="#" class="category-link"
-                      >Radios & Intercom Syste...</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">
-                      Air Compressors/tanks An...
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Coilover Springs </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >Diff Housings & Accesso...
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Dimple Dies </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Fuel Tanks & Storage </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Heim Joints & Parts </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Helmets & Accessories </a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link">Limiting Straps</a>
-                  </li>
-                  <li>
-                    <a href="#" class="category-link"
-                      >Radios & Intercom Syste...</a
-                    >
-                  </li>
-                </ul>
-                <a class="more-btn" href="#">PLUS MORE...</a>
+            </li>
+            <li class="payment-type">
+              <fieldset>
+                <button>
+                  <img src="./assets/images/productInfo/i-rounded.svg" alt="i-details" />
+                </button>
+                <p>buy now, pay later</p>
+              </fieldset>
+              <div class="image-block">
+                <img src="./assets/images/productInfo/zip.svg" alt="zip" />
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="info-part">
-          <div class="row custom-row">
-            <div class="col-lg-8 col-12">
-              <div class="pages-link-part">
-                <a href="#" class="p-link">PRODUCTS</a>
-                <a href="#" class="p-link">SHOP</a>
-                <a href="#" class="p-link">STOCKISTS</a>
-                <a href="#" class="p-link">HELP</a>
-                <a href="#" class="p-link">CONTACT</a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="socialmedia-link-part">
-                <a href="#" class="f-link"
-                  ><img
-                    src="./assets/images/footer/facebook white.svg"
-                    alt="facebook-icon"
-                /></a>
-                <a href="#" class="f-link"
-                  ><img
-                    src="./assets/images/footer/insta white.png"
-                    alt="instagram-icon"
-                /></a>
-                <a href="#" class="f-link"
-                  ><img
-                    src="./assets/images/footer/tiktok white.svg"
-                    alt="tiktok-icon"
-                /></a>
-                <a href="#" class="f-link"
-                  ><img
-                    src="./assets/images/footer/youtube white.svg"
-                    alt="youtube-icon"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="row custom-row">
-            <div class="col-lg-8 col-12">
-              <div class="payment-support">
-                <div class="box">
-                  <h6>Safe and Secure Shopping</h6>
-                  <span class="divider"></span>
-                  <div class="payment-gateways">
-                    <img
-                      src="./assets/images/footer/visa.svg"
-                      alt="visa card"
-                    />
-                    <img src="./assets/images/footer/strips.svg" alt="stripe" />
-                    <img
-                      src="./assets/images/footer/razorpay.svg"
-                      alt="razorpay"
-                    />
-                    <img
-                      src="./assets/images/footer/Google-Pay.svg"
-                      alt="google pay"
-                    />
-                    <img src="./assets/images/footer/paypal.svg" alt="paypal" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-12">
-              <div class="company-details">
-                <div class="detail-group">
-                  <img src="./assets/images/footer/phone.svg" alt="call" />
-                  <a href="tel:+18989209282" class="detail">+1 898 920 9282</a>
-                </div>
-                <div class="detail-group">
-                  <img src="./assets/images/footer/EMAIL.svg" alt="website" />
-                  <a href="#" class="detail">www.company.com</a>
-                </div>
-                <div class="detail-group">
-                  <img
-                    src="./assets/images/footer/location.svg"
-                    alt="address"
-                  />
-                  <p class="detail">
-                    8 Chrome Crt Burpengary <br />QLD 4505 Australia
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="bottom-part">
-        <div class="container">
-          <div class="inner-content">
+    </section>
+    <section class="product-details">
+      <div class="tab-parent">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab1" data-bs-toggle="pill" data-bs-target="#pills-home1"
+              type="button" role="tab" aria-controls="pills-home1" aria-selected="true">
+              Product Info
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab1" data-bs-toggle="pill" data-bs-target="#pills-profile1"
+              type="button" role="tab" aria-controls="pills-profile1" aria-selected="false">
+              Disclaimer
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab1" data-bs-toggle="pill" data-bs-target="#pills-contact1"
+              type="button" role="tab" aria-controls="pills-contact1" aria-selected="false">
+              FAQ/ Extra info
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="devider"></div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="custom-tab">
             <div class="left-part">
-              <img src="./assets/images/footer/copyright.svg" alt="copyright" />
-              <p>2023 Superior Engineering. All Rights Reserved</p>
+              <ul>
+                <li>
+                  <h3 class="info">
+                    These spacers are used when installing airbags with Superior coil retainers fitted.
+                  </h3>
+                </li>
+                <li>
+                  <h3 class="info">
+                    Designed to work with a 2-3" lift.
+                  </h3>
+                </li>
+                <li>
+                  <h3 class="info">
+                    Sold as a set of 2.
+                  </h3>
+                </li>
+              </ul>
             </div>
             <div class="right-part">
-              <img
-                src="./assets/images/footer/licence.svg"
-                alt="cyber-certificate"
-              />
-              <a href="#" class="footer-link">Terms & Conditions</a>
-              <a href="#" class="footer-link">Privacy Policy</a>
-              <a href="#" class="footer-link">Site Map</a>
+              <img src="./assets/images/productList/product1.png" alt="Product Image">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="custom-tab">
+            <p class="random-text">Disclaimer</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="custom-tab">
+            <p class="random-text">FAQ/ Extra info</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="common-recommended-section">
+      <div class="custom-container">
+        <div class="section-heading-block">
+          <h3 class="section-heading-text">Recommended for you</h3>
+          <span class="head-text-underline"></span>
+        </div>
+        <!-- slider-part -->
+        <div class="list-block">
+          <div class="owl-carousel owl-theme">
+            <div class="item-box">
+              <a href="#" class="product-list-card slider-product">
+                <div class="ribbon">Low Stock</div>
+                <div class="image-part">
+                  <img src="./assets/images/common/recommended-1.svg" alt="product" />
+                </div>
+                <div class="product-info-body">
+                  <p>
+                    AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
+                    NISSAN PATROL GQ/GU (PAIR)
+                  </p>
+                  <h6>$130.00</h6>
+                </div>
+                <div class="product-add-btn">
+                  <img src="./assets/images/cart-white.svg" class="me-2" />add
+                  to Cart
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="#" class="product-list-card slider-product">
+                <div class="ribbon highstock">High Stock</div>
+                <div class="image-part">
+                  <img src="./assets/images/common/recommended-2.svg" alt="product" />
+                </div>
+                <div class="product-info-body">
+                  <p>
+                    AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
+                    NISSAN PATROL GQ/GU (PAIR)
+                  </p>
+                  <h6>$130.00</h6>
+                </div>
+                <div class="product-add-btn">
+                  <img src="./assets/images/cart-white.svg" class="me-2" />add
+                  to Cart
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="#" class="product-list-card slider-product">
+                <div class="ribbon">Low Stock</div>
+                <div class="image-part">
+                  <img src="./assets/images/common/recommended-3.svg" alt="product" />
+                </div>
+                <div class="product-info-body">
+                  <p>
+                    AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
+                    NISSAN PATROL GQ/GU (PAIR)
+                  </p>
+                  <h6>$130.00</h6>
+                </div>
+                <div class="product-add-btn">
+                  <img src="./assets/images/cart-white.svg" class="me-2" />add
+                  to Cart
+                </div>
+              </a>
+            </div>
+            <div class="item-box">
+              <a href="#" class="product-list-card slider-product">
+                <div class="ribbon">Low Stock</div>
+                <div class="image-part">
+                  <img src="./assets/images/common/recommended-4.svg" alt="product" />
+                </div>
+                <div class="product-info-body">
+                  <p>
+                    AIRBAG PROTECTORS/SPACERS 2-3 INCH LIFT LOWER SUITABLE FOR
+                    NISSAN PATROL GQ/GU (PAIR)
+                  </p>
+                  <h6>$130.00</h6>
+                </div>
+                <div class="product-add-btn">
+                  <img src="./assets/images/cart-white.svg" class="me-2" />add
+                  to Cart
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/select2.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        items: 4,
-        margin: 20,
-        loop: true,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1,
-            dots: true,
-            nav: false,
-          },
-          620: {
-            items: 2,
-            nav: true,
-            dots: false,
-          },
-          1024: {
-            items: 3,
-            nav: true,
-            dots: false,
-          },
-          1280: {
-            items: 4,
-            nav: true,
-            dots: false,
-          },
+    </section>
+  </main>
+  <footer class="footer-section">
+    <div class="top-part">
+      <div class="logo-part">
+        <a class="logo" href="./index.html">
+          <img src="./assets/images/logo.svg" alt="superior-logo" />
+        </a>
+        <div class="line"></div>
+      </div>
+      <div class="content-part">
+        <div class="row custom-row">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="product-part">
+              <h5 class="category-heading">4X4 SUSPENSION</h5>
+              <ul class="category-list">
+                <li><a href="#" class="category-link">Radius Arms</a></li>
+                <li><a href="#" class="category-link">Air Bags</a></li>
+                <li><a href="#" class="category-link">Bushes</a></li>
+                <li><a href="#" class="category-link">Coil Conversion</a></li>
+                <li>
+                  <a href="#" class="category-link">coil Spacers/Struct Spacers</a>
+                </li>
+                <li><a href="#" class="category-link">coil Springs</a></li>
+                <li><a href="#" class="category-link">Control Arms</a></li>
+                <li>
+                  <a href="#" class="category-link">Suspension Lift kits</a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Gym/gcm Upgrades</a>
+                </li>
+                <li><a href="#" class="category-link">Leaf Springs</a></li>
+              </ul>
+              <a class="more-btn" href="#">PLUS MORE...</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="product-part">
+              <h5 class="category-heading">4x4 DRIVELINE</h5>
+              <ul class="category-list">
+                <li>
+                  <a href="#" class="category-link">Brake Line & Companents</a>
+                </li>
+                <li><a href="#" class="category-link">Axles & Cv's</a></li>
+                <li>
+                  <a href="#" class="category-link">Brake Line & Compone...</a>
+                </li>
+                <li><a href="#" class="category-link">Diff Gears sets</a></li>
+                <li>
+                  <a href="#" class="category-link">Diff housing & Accessories</a>
+                </li>
+                <li><a href="#" class="category-link">Steering</a></li>
+                <li>
+                  <a href="#" class="category-link">Diff Rebult Kits </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Driveline </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Lockers</a>
+                </li>
+              </ul>
+              <a class="more-btn" href="#">PLUS MORE...</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="product-part">
+              <h5 class="category-heading">4x4 ACCESSORIES</h5>
+              <ul class="category-list">
+                <li>
+                  <a href="#" class="category-link">Bull Bars </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Air Compressors 12v </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Air tanks & Accessories
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Awinings/tents/swags </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Batteries & Dual Battery A...
+                  </a>
+                </li>
+                <li><a href="#" class="category-link">Body Lifts </a></li>
+                <li>
+                  <a href="#" class="category-link">Camping Accessories </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Camping Lights </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Car Care Products</a>
+                </li>
+              </ul>
+              <a class="more-btn" href="#">PLUS MORE...</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="product-part">
+              <h5 class="category-heading">BUGGY/RACING</h5>
+              <ul class="category-list">
+                <li>
+                  <a href="#" class="category-link">Radios & Intercom Syste...</a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">
+                    Air Compressors/tanks An...
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Coilover Springs </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Diff Housings & Accesso...
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Dimple Dies </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Fuel Tanks & Storage </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Heim Joints & Parts </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Helmets & Accessories </a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Limiting Straps</a>
+                </li>
+                <li>
+                  <a href="#" class="category-link">Radios & Intercom Syste...</a>
+                </li>
+              </ul>
+              <a class="more-btn" href="#">PLUS MORE...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-part">
+        <div class="row custom-row">
+          <div class="col-lg-8 col-12">
+            <div class="pages-link-part">
+              <a href="#" class="p-link">PRODUCTS</a>
+              <a href="#" class="p-link">SHOP</a>
+              <a href="#" class="p-link">STOCKISTS</a>
+              <a href="#" class="p-link">HELP</a>
+              <a href="#" class="p-link">CONTACT</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="socialmedia-link-part">
+              <a href="#" class="f-link"><img src="./assets/images/footer/facebook white.svg" alt="facebook-icon" /></a>
+              <a href="#" class="f-link"><img src="./assets/images/footer/insta white.png" alt="instagram-icon" /></a>
+              <a href="#" class="f-link"><img src="./assets/images/footer/tiktok white.svg" alt="tiktok-icon" /></a>
+              <a href="#" class="f-link"><img src="./assets/images/footer/youtube white.svg" alt="youtube-icon" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row custom-row">
+          <div class="col-lg-8 col-12">
+            <div class="payment-support">
+              <div class="box">
+                <h6>Safe and Secure Shopping</h6>
+                <span class="divider"></span>
+                <div class="payment-gateways">
+                  <img src="./assets/images/footer/visa.svg" alt="visa card" />
+                  <img src="./assets/images/footer/strips.svg" alt="stripe" />
+                  <img src="./assets/images/footer/razorpay.svg" alt="razorpay" />
+                  <img src="./assets/images/footer/Google-Pay.svg" alt="google pay" />
+                  <img src="./assets/images/footer/paypal.svg" alt="paypal" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="company-details">
+              <div class="detail-group">
+                <img src="./assets/images/footer/phone.svg" alt="call" />
+                <a href="tel:+18989209282" class="detail">+1 898 920 9282</a>
+              </div>
+              <div class="detail-group">
+                <img src="./assets/images/footer/EMAIL.svg" alt="website" />
+                <a href="#" class="detail">www.company.com</a>
+              </div>
+              <div class="detail-group">
+                <img src="./assets/images/footer/location.svg" alt="address" />
+                <p class="detail">
+                  8 Chrome Crt Burpengary <br />QLD 4505 Australia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-part">
+      <div class="container">
+        <div class="inner-content">
+          <div class="left-part">
+            <img src="./assets/images/footer/copyright.svg" alt="copyright" />
+            <p>2023 Superior Engineering. All Rights Reserved</p>
+          </div>
+          <div class="right-part">
+            <img src="./assets/images/footer/licence.svg" alt="cyber-certificate" />
+            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Site Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      items: 4,
+      margin: 20,
+      loop: true,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1,
+          dots: true,
+          nav: false,
         },
-      });
-    </script>
-  </body>
+        620: {
+          items: 2,
+          nav: true,
+          dots: false,
+        },
+        1024: {
+          items: 3,
+          nav: true,
+          dots: false,
+        },
+        1280: {
+          items: 4,
+          nav: true,
+          dots: false,
+        },
+      },
+    });
+  </script>
+</body>
+
 </html>
