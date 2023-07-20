@@ -2462,6 +2462,9 @@ span.divider {
   height: 320px;
   background-size: cover;
 }
+.common-banner-section.searchByRego{
+  background-image: url("../images/banner/searchByRego-banner.png");
+}
 .common-banner-section.productList {
   background-image: url("../images/banner/productBanner.png");
 }

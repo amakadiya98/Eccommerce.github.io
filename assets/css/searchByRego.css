@@ -1,0 +1,381 @@
+.main-block .optionSection{
+    padding: 62px 0;
+    background: #F6F6F6;
+}
+.searchByRego-page .sub-input-box{
+    padding: 0;
+}
+.searchByRego-page .sub-input-box input{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    padding-left: 20px;
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    width: 90%;
+    font-size: 30px;
+}
+
+.searchByRego-page .sub-input-box img{
+    width: 100%;
+}
+
+.main-block .optionSection .head{
+    color: #000;
+    text-align: center;
+    font-size: 15px;    
+    font-weight: 400;
+    line-height: 130%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-block .optionSection .box-part{
+    width: 80%;
+    margin: 25px auto 0;
+    display: flex;
+    gap: 60px;
+}
+
+.main-block .optionSection .box-part .box{
+    background: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 44%;
+}
+
+.main-block .optionSection .box-part .box .top{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: #28A5D8;
+    gap: 20px;
+}
+
+.main-block .optionSection .box-part .box .top .head-text{
+    color: #FFF;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-block .optionSection .box-part .box .box-body{
+    margin-top: 64px;
+    padding: 0 45px;
+}
+
+.main-block .optionSection .box-part .box .box-body .lable{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.main-block .optionSection .box-part .box .box-body .field{
+    display: flex;
+    gap: 22px;
+    margin-top: 21px;
+    align-items: center;
+}
+
+.main-block .optionSection .box-part .box .box-body .field .label{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.main-block .optionSection .box-part .box .box-body .field #region{
+    border-radius: 6px;
+    background: #EBEBEB;
+    padding: 5px 15px;
+    color: rgba(57, 57, 57, 0.60);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    width: 68%;
+}
+
+.main-block .optionSection .box-part .box .box-body .button-part{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-block .optionSection .box-part .box .box-body .button-part .Btn{
+    background-color: #28A5D8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 40px;
+    margin-bottom: 12px;
+}
+
+.main-block .optionSection .box-part .box .box-body .field.SB{
+    justify-content: flex-end;
+}
+
+.look-up-section{
+    background-color: #FFF;
+    padding: 80px 0;
+}
+
+.look-up-section .head .head-text{
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+
+.look-up-section .head .text{
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 76%;
+    margin: 12px auto 26px;
+}
+
+.look-up-section .video-part{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.look-up-section .video-part .Play-Button{
+    position: absolute;
+    top: 38%;
+    left: 48%;
+}
+
+.look-up-section .video-part .vid{
+    width: 100%;
+}
+
+.how-to-steps{
+    padding: 84px 100px;
+    background-color: #393939;
+}
+
+.how-to-steps .steps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.how-to-steps .steps .left-part,
+.how-to-steps .steps .right-part{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.how-to-steps .steps .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.how-to-steps .steps .step .head{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.how-to-steps .steps .step .data{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.how-to-steps .steps .step .data.cut{
+    width: 56%;
+}
+
+.newsletter{
+    background-image: url("../images/searchByRego-page/newsletter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 144px 0;
+}
+
+.newsletter .content{
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter .content .title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 0em;
+    color: #FFF;
+}
+
+.newsletter .content .field{
+    display: flex;
+    align-items: center;
+    width: 82%;
+}
+
+.newsletter .content .field .Email{
+    padding: 28px 50px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 100%;
+}
+.newsletter .content .field .Email:focus-visible{
+    outline: 0;
+}
+.newsletter .content .field .Btn{
+    padding: 28px 67px;
+    background-color: #28A5D8;
+    border: none;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-left: -5px;
+}
+
+/* ----- Responsive design start here ----- */
+@media (max-width:1440px) {
+    .newsletter .content .title,
+    .look-up-section .head .head-text,
+    .searchByRego-page .common-banner-section .banner-content h2{
+        font-size: 44px;
+    }
+}
+@media (max-width:1280px) {
+    .main-block .optionSection .box-part{
+        width: 100%;
+    }
+    .main-block .optionSection .box-part .box .box-body .field{
+        justify-content: flex-end;
+    }
+    .main-block .optionSection .box-part .box{
+        width: 50%;
+    }
+    .main-block .optionSection .box-part .box .box-body{
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    .look-up-section .head .text{
+        width: 85%;
+    }
+    .main-block .optionSection .box-part .box .box-body .field{
+        gap: 6px;
+    }
+    .how-to-steps .steps{
+        gap: 30px;
+    }
+}
+@media (max-width:1024px) {
+    .main-block .optionSection .head,
+    .look-up-section .head .text{
+        width: 100%;
+    }
+    .how-to-steps .steps .step .data.cut{
+        width: 70%;
+    }
+    .how-to-steps .steps{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .newsletter .content .title,
+    .look-up-section .head .head-text,
+    .searchByRego-page .common-banner-section .banner-content h2{
+        font-size: 34px;
+    }
+    .newsletter .content{
+        gap: 30px;
+    }
+    .newsletter .content .field .Email{
+        padding: 20px 35px;
+    }
+    .newsletter .content .field .Btn{
+        padding: 20px 50px;
+    }
+}
+@media (max-width:991px) {
+    .main-block .optionSection .box-part{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-block .optionSection .box-part .box{
+        width: 100%;
+    }
+    .searchByRego-page .sub-input-box input{
+        top: 25%;
+        font-size: 40px;
+    }
+    .main-block .optionSection .box-part .box .box-body .field{
+        gap: 20px;
+    }
+    .newsletter .content .field{
+        width: 100%;
+    }
+    .look-up-section .video-part .Play-Button{
+        left: 45%;
+    }
+}
+@media (max-width:768px) {
+    .searchByRego-page .common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+        font-size: 15px;
+    }
+    .newsletter .content .title,
+    .look-up-section .head .head-text,
+    .searchByRego-page .common-banner-section .banner-content h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .how-to-steps .steps .left-part,
+    .how-to-steps .steps .right-part{
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media (max-width:425px) {
+    .look-up-section .video-part .Play-Button{
+        left: 40%;
+        top: 32%;
+        width: 18%;
+    }
+    .newsletter .content .field{
+        flex-direction: column;
+    }
+    .newsletter .content .field .Email{
+        padding: 15px 35px;
+    }
+    .newsletter .content .field .Btn{
+        padding: 15px 50px;
+    }
+    .searchByRego-page .common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+        font-size: 12px;
+    }
+    .how-to-steps .steps .step .data.cut{
+        width: 100%;
+    }
+    .searchByRego-page .common-banner-section .banner-content h2{
+        font-size: 18px;
+    }
+}
