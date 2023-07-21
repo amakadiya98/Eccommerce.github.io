@@ -1,0 +1,73 @@
+.checkout-page {
+  width: 100%;
+}
+
+.checkout-page .content-section {
+  width: 100%;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.checkout-page .content-section .page-nav-part {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.checkout-page .content-section .page-nav-part .next-page-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  line-height: normal;
+}
+.checkout-page .content-section .page-nav-part .next-page-link.active {
+  color: #28a5d8;
+}
+.checkout-page .content-section .page-nav-part .dot-line {
+  width: 8%;
+  height: 1px;
+  border: 1px dashed #000;
+}
+.checkout-page .content-section .custom-row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 72% auto;
+  gap: 65px;
+}
+.checkout-page .content-section .custom-row .product-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 35px;
+}
+.checkout-page .content-section .custom-row .price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+.theme-accordian-block {
+  display: flex;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-top: 8px solid #28a5d8;
+  padding: 20px;
+}
+.theme-accordian-block .accordion {
+  width: 100%;
+  background-color: transparent;
+}
+.theme-accordian-block .accordion .accordion-item {
+    background-color: transparent;
+}
+.theme-accordian-block .accordion-flush .accordion-item .accordion-button {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
