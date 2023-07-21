@@ -416,12 +416,6 @@
     top: 32%;
     width: 18%;
   }
-  .newsletter .content .field .Email {
-    padding: 15px 35px;
-  }
-  .newsletter .content .field .Btn {
-    padding: 15px 50px;
-  }
   .searchByRego-page
     .common-banner-section
     .banner-content
@@ -682,6 +676,7 @@
   }
   .brand-section .content-block .brand-lists {
     grid-template-columns: auto auto;
+    gap: 20px;
   }
   .brand-section .brand-lists .list-box ul li {
     font-size: 14px;
