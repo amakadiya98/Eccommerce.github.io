@@ -1007,7 +1007,7 @@ span.divider {
   gap: 15px;
 }
 .main-block .section-heading-block .section-heading-text {
-  color: #1e1c1c;
+  color: #fff;
   text-align: center;
   font-size: 50px;
   font-family: Ubuntu;
@@ -1028,7 +1028,8 @@ span.divider {
 .main-block .common-recommended-section {
   width: 100%;
   padding: 100px 0;
-  background-color: #fff;
+  background-color: #393939;
+  border-top: 2px solid #000;
 }
 .main-block .common-recommended-section .custom-container {
   gap: 100px;
@@ -1074,6 +1075,8 @@ span.divider {
 }
 .product-list-card .product-info-body {
   padding: 20px 14px;
+  background-color: #1e1c1c;
+  color: #fff;
 }
 .product-list-card .product-info-body p {
   font-size: 16px;
@@ -1148,7 +1151,8 @@ span.divider {
   margin-top: -20px;
   position: absolute;
   top: 45%;
-  background-color: #d9d9d9;
+  background-color: #1e1c1c;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

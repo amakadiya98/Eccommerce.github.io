@@ -1,13 +1,16 @@
 .product-list-page {
-  background-color: #f6f6f6;
+  background-color: #393939;
+  color: #fff;
 }
 .product-list-page .main-block {
   overflow-x: hidden !important;
 }
+
 .left-part-card {
   border-radius: 6px;
   border: 1px solid rgba(97, 97, 97, 0.5);
-  background: #fff;
+  background: #1e1c1c;
+  color: #fff;
   padding: 32px 0;
 }
 .left-part-card .part {
@@ -18,7 +21,7 @@
   border-bottom: 0;
 }
 .left-part-card .part .title {
-  color: #1e1c1c;
+  color: #fff;
   font-size: 20px;
   font-weight: 500;
 }
@@ -36,7 +39,7 @@
   margin-top: 14px;
 }
 .left-part-card .part li a {
-  color: #393939;
+  color: #fff;
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 400;
@@ -51,14 +54,16 @@
 }
 .left-part-card .accordion-item {
   border: 0;
+  background-color: #1e1c1c;
 }
 .left-part-card .accordion-button {
-  color: #1e1c1c;
+  color: #fff;
+  background-color: #1e1c1c;
   font-size: 20px;
   font-weight: 500;
 }
 .left-part-card .accordion-button:not(.collapsed) {
-  background-color: transparent;
+  background-color: #1e1c1c;
   box-shadow: none;
 }
 .left-part-card .accordion-button:focus {
@@ -66,14 +71,14 @@
   box-shadow: none;
 }
 .left-part-card .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 .left-part-card .accordion-body {
   padding: 0;
   margin: 20px 0 20px 0px;
 }
 .left-part-card .form-check-label {
-  color: #393939;
+  color: #fff;
   font-size: 16px;
   font-family: Poppins;
   font-style: normal;
@@ -88,7 +93,7 @@
   border-color: #28a5d8;
 }
 .main-data-part .information {
-  color: #393939;
+  color: #fff;
   font-size: 20px;
   font-family: Poppins;
   font-style: normal;
@@ -168,6 +173,7 @@
   text-transform: capitalize;
   padding: 15px;
   border: 1px solid #28a5d8;
+  background-color: #1e1c1c;
   cursor: pointer;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -219,7 +225,7 @@
 }
 
 .main-data-part .filter-part .pagination a {
-  color: black;
+  color: #fff;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
@@ -229,13 +235,13 @@
 }
 
 .main-data-part .filter-part .pagination a.active {
-  background-color: #1e1c1c;
+  background-color: #28a5d8;
   color: white;
   border-radius: 6px;
 }
 
 .main-data-part .filter-part .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #1e1c1c;
   border-radius: 5px;
 }
 .filter-part .filter-block {
@@ -244,7 +250,7 @@
   gap: 10px;
 }
 .main-data-part p.label {
-  color: #1e1c1c;
+  color: #fff;
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;

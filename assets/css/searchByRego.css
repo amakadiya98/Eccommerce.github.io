@@ -1,6 +1,7 @@
 .main-block .optionSection {
   padding: 62px 0;
-  background: #f6f6f6;
+  background: #393939;
+  color: #fff;
 }
 .searchByRego-page .sub-input-box {
   padding: 0;
@@ -17,6 +18,7 @@
   top: 10px;
   width: 90%;
   font-size: 30px;
+  color: #fff;
 }
 
 .searchByRego-page .sub-input-box img {
@@ -24,7 +26,7 @@
 }
 
 .main-block .optionSection .head {
-  color: #000;
+  color: #fff;
   text-align: center;
   font-size: 15px;
   font-weight: 400;
@@ -41,7 +43,7 @@
 }
 
 .main-block .optionSection .box-part .box {
-  background: #ffffff;
+  background: #1e1c1c;
   border-radius: 6px;
   overflow: hidden;
   width: 44%;
@@ -69,7 +71,7 @@
 }
 
 .main-block .optionSection .box-part .box .box-body .lable {
-  color: #000;
+  color: #fff;
   font-size: 15px;
   font-weight: 400;
   line-height: 17px;
@@ -84,7 +86,7 @@
 }
 
 .main-block .optionSection .box-part .box .box-body .field .label {
-  color: #000;
+  color: #fff;
   font-size: 15px;
   font-weight: 400;
   line-height: 17px;
@@ -92,13 +94,15 @@
 
 .main-block .optionSection .box-part .box .box-body .field #region {
   border-radius: 6px;
-  background: #ebebeb;
+  background: #1e1c1c;
   padding: 5px 15px;
-  color: rgba(57, 57, 57, 0.6);
+  color: #fff;
   font-size: 13px;
   font-weight: 400;
   line-height: 15px;
   width: 68%;
+  outline: 0;
+  box-shadow: none;
 }
 
 .main-block .optionSection .box-part .box .box-body .button-part {
@@ -121,12 +125,12 @@
 }
 
 .look-up-section {
-  background-color: #fff;
+  background-color: #1e1c1c;
   padding: 80px 0;
 }
 
 .look-up-section .head .head-text {
-  color: #000;
+  color: #fff;
   text-align: center;
   font-size: 50px;
   font-weight: 700;
@@ -135,7 +139,7 @@
 }
 
 .look-up-section .head .text {
-  color: #000;
+  color: #fff;
   text-align: center;
   font-size: 15px;
   font-weight: 400;
@@ -449,6 +453,8 @@
 .searchBrand-page {
   width: 100%;
   overflow-x: hidden;
+  background-color: #393939;
+  color: #fff;
 }
 .searchBrand-page .main-block .common-banner-section {
   background-image: url("../images//searchByBrand/Mask\ group.jpg");
@@ -468,7 +474,8 @@
 
 .searchBrand-page .brand-section {
   width: 100%;
-  background-color: #fff;
+  background-color: #393939;
+  color: #fff;
   padding: 50px 130px;
 }
 .searchBrand-page .brand-section .content-block {
@@ -478,7 +485,7 @@
   gap: 30px;
 }
 .brand-section .content-block .section-title {
-  color: #000;
+  color: #fff;
   font-family: "Ubuntu";
   font-size: 30px;
   font-weight: 700;
@@ -507,9 +514,9 @@
   border-bottom: 2px solid rgba(97, 97, 97, 0.5);
 }
 .brand-section .content-block .letter-wise-brand-nav .brand-nav {
-  color: rgba(97, 97, 97, 0.5);
+  color: #fff;
   font-family: "Ubuntu";
-  font-size: 20px;
+  font-size: 20px;  
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -517,7 +524,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -532,13 +539,13 @@
   .content-block
   .letter-wise-brand-nav
   .brand-nav:not(.active):hover {
-  background-color: lightgray;
-  color: #000;
+  background-color: #1e1c1c;
+  color: #fff;
 }
 .brand-section .letter-wise-brand-nav button {
   all: unset;
   font-size: 22px;
-  color: #8e8e8e;
+  color: #1e1c1c;
   cursor: pointer;
 }
 .brand-section .letter-wise-brand-nav button:hover {
@@ -575,7 +582,7 @@
   padding: 0;
 }
 .brand-section .brand-lists .list-box ul li {
-  color: #000;
+  color: #fff;
   font-family: "Ubuntu";
   font-size: 20px;
   font-weight: 400;

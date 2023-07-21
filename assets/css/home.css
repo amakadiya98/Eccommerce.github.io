@@ -38,7 +38,7 @@
 /* ------- category section css start ------- */
 .main-block .category-section {
   width: 100%;
-  background-color: var(--dark-bg);
+  background-color: #1e1c1c;
 }
 .category-section .content {
   display: grid;
@@ -84,7 +84,7 @@
 /* ------- product section css start ------- */
 .main-block .our-product-section {
   width: 100%;
-  background-color: #fff;
+  background-color: #393939;
   padding: 100px 0;
 }
 .main-block .our-product-section .product-list-part {
@@ -126,10 +126,11 @@
   display: none;
 }
 .our-product-section .product-list-part .types.active {
-  color: #1e1c1c;
+  color: #fff;
+  background-color: transparent;
 }
 .our-product-section .product-list-part .types.active::after {
-  background-color: #1e1c1c;
+  background-color: #fff;
 }
 .our-product-section .product-list-part .nav-tabs {
   border-bottom: none;
@@ -185,7 +186,8 @@
   max-height: 850px;
   padding: 8px 8px 16px;
   border-radius: 6px;
-  background: #fff;
+  background: #1e1c1c;
+  color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   transition: all ease 0.3s;
 }
@@ -218,7 +220,7 @@
   .item-box
   .desc-part
   .desc-text {
-  color: #393939;
+  color: #fff;
   font-size: 20px;
   font-family: Poppins;
   font-weight: 400;
@@ -244,7 +246,7 @@
   .desc-part
   .price-part
   span {
-  color: #393939;
+  color: #fff;
   font-size: 24px;
   font-family: Ubuntu;
   font-weight: 400;
@@ -277,7 +279,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark-bg);
+  background-color: #1e1c1c;
 }
 .customer-review .content-part .right-part .review-box {
   display: flex;
@@ -387,6 +389,7 @@
 .main-block .blog-post-section {
   width: 100%;
   padding: 100px 0;
+  background-color: #393939;
 }
 .blog-post-section .blog-list-part {
   display: flex;
@@ -402,7 +405,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 6px;
-  background: #fff;
+  background: #1e1c1c;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   padding: 30px;
   gap: 20px;
@@ -455,7 +458,7 @@
   gap: 15px;
 }
 .blog-post-section .blog-card .blog-details .blog-text {
-  color: #000;
+  color: #fff;
   font-size: 24px;
   font-family: Poppins;
   font-style: normal;
@@ -520,7 +523,7 @@
 
 .insta-reels {
   padding: 4rem 2rem;
-  background-color: var(--light-bg);
+  background-color: #393939;
 }
 
 .insta-reels h2 {
@@ -556,8 +559,11 @@
 .insta-one {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   padding-bottom: 15px;
+  background: #1e1c1c;
 }
-
+.insta-details p, .insta-details span {
+  color: #fff;
+}
 .insta-one:hover {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -584,6 +590,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #393939;
 }
 
 .follow-us-box {
@@ -681,6 +688,7 @@
 .contact-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #393939;
 }
 
 .canvass {
@@ -707,7 +715,7 @@ iframe {
   padding-bottom: 15px;
   margin-bottom: 2rem;
   padding-top: 20px;
-  color: #1e1c1c;
+  color: #fff;
   text-align: center;
   font-size: 50px;
   font-family: Ubuntu;
@@ -733,12 +741,14 @@ iframe {
   width: 100%;
   padding: 8px;
   outline: none;
+  background-color: transparent;
   border-radius: 5px;
   border: 2px solid silver;
 }
 
 .form-wrap label {
   font-weight: 600;
+  color: #fff;
 }
 
 .form-wrap textarea {
@@ -749,6 +759,9 @@ iframe {
   max-height: 100px;
   min-height: 100px;
   max-width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid silver;
 }
 
 .form-button {
