@@ -20,7 +20,7 @@
   padding: 50px 100px;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(57, 57, 57, 0.65);
+  background-color: #1e1c1ccc;
   z-index: 999999000;
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  background-color: #fff;
+  background-color: #393939;
   box-shadow: -8px 4px 50px 0px rgba(0, 0, 0, 0.25);
 }
 .signin-section .form-part .heading-block {
@@ -83,7 +83,7 @@
   gap: 10px;
 }
 .signin-section .form-part .content-block .group > label {
-  color: #393939;
+  color: #fff;
   font-size: 20px;
   font-weight: 500;
   line-height: 115%;
@@ -94,7 +94,8 @@
   border-radius: 6px;
   border: 1px solid rgba(57, 57, 57, 0.6);
   padding: 8px 15px;
-  color: #b4b4b4;
+  color: #fff;
+  background-color: #1e1c1c;
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 400;
@@ -107,7 +108,7 @@
   width: 100%;
   text-align: right;
   justify-content: flex-end;
-  color: #393939;
+  color: lightgray;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 500;
@@ -118,7 +119,7 @@
 }
 .signin-section .form-part .content-block .captcha-text {
   margin-top: -20px;
-  color: #393939;
+  color: #fff;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 300;
@@ -163,7 +164,7 @@
   line-height: normal;
   padding: 15px 25px;
   position: absolute;
-  background-color: #fff;
+  background-color: #393939;
 }
 .signin-section .form-part .new-account {
   display: flex;
@@ -241,10 +242,13 @@
     margin-right: 20px;
   }
   .signin-section .form-part .content-block{
-    padding: 20px 30px 40px;
+    padding: 20px 15px 40px;
   }
   .signin-section .form-part .new-account{
     padding: 30px;
+  }
+  .signin-section .form-part .content-block .captcha-text{
+    margin-top: 0;
   }
   .signin-section .form-part .divider p{
     font-size: 14px;
