@@ -341,3 +341,115 @@
 .price-block .theme-accordian-block{
   padding: 10px;
 }
+
+/* ------ responsive css start here ----- */
+@media (max-width: 1751px) {
+  .checkout-page .content-section{
+    padding: 50px;
+  }
+  .checkout-page .content-section .custom-row{
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1281px) {
+  .checkout-page .content-section .page-nav-part .next-page-link{
+    font-size: 20px;
+  }
+  .checkout-page .content-section .page-nav-part .dot-line{
+    width: 6%;
+  }
+  .theme-accordian-block{
+    padding: 10px;
+  }
+  .theme-accordian-block .accordion-flush .accordion-item .accordion-button{
+    padding: 8px 14px;
+    font-size: 20px;
+  }
+  .item-inside-accordion .top-selection-part .left-selection label,
+  .price-card .amount-block fieldset h6,
+  .product-block .payment-options .payment-type fieldset p{
+    font-size: 18px;
+  }
+  .item-inside-accordion .top-selection-part .right-button button{
+    font-size: 16px;
+  }
+  .cart-card .desc-block p,
+  .price-card .amount-block fieldset p{
+    font-size: 16px;
+  }
+  .cart-card .desc-block span{
+    font-size: 14px;
+  }
+  .price-block .price-card h5{
+    font-size: 20px;
+  }
+  .cart-card .desc-block h5{
+    font-size: 24px;
+  }
+  .cart-card .quantity{
+    width: 135px;
+  }
+  .item-inside-accordion input[type="checkbox"]{
+    width: 20px;
+    height: 23px;
+  }
+  .theme-accordian-block .item-inside-accordion{
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .checkout-page .content-section .custom-row{
+    gap: 30px;
+  }
+  .checkout-page .content-section{
+    padding: 40px 30px;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .checkout-page .content-section .custom-row{
+    grid-template-columns: 65% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-page .content-section .custom-row{
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkout-page .content-section{
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  .checkout-page .content-section .custom-row{
+    gap: 20px;
+  }
+  .checkout-page .content-section .custom-row .product-block{
+    gap: 20px;
+  }
+  .theme-accordian-block .item-inside-accordion{
+    gap: 20px;
+  }
+  .theme-accordian-block .item-inside-accordion .top-selection-part{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .item-inside-accordion .cart-content .cart-card{
+    flex-direction: column;
+  }
+  .cart-card .image-block {
+    width: 80%;
+  }
+  .cart-card .desc-block{
+    width: 100%;
+  }
+  .checkout-page .content-section .custom-row .price-block{
+    gap: 20px;
+  }
+}
