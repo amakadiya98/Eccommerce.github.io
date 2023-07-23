@@ -36,7 +36,7 @@
 .checkout-page .content-section .custom-row {
   display: grid;
   width: 100%;
-  grid-template-columns: 72% auto;
+  grid-template-columns: 70% auto;
   gap: 65px;
 }
 .checkout-page .content-section .custom-row .product-block {
@@ -63,11 +63,281 @@
   background-color: transparent;
 }
 .theme-accordian-block .accordion .accordion-item {
-    background-color: transparent;
+  background-color: transparent;
 }
 .theme-accordian-block .accordion-flush .accordion-item .accordion-button {
   background-color: transparent;
   outline: none;
   box-shadow: none;
   border: none;
+  font-size: 24px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: #000 !important;
+}
+.theme-accordian-block .item-inside-accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+  padding: 0 1.25rem;
+}
+.theme-accordian-block .item-inside-accordion .top-selection-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+.item-inside-accordion .top-selection-part .left-selection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.item-inside-accordion .top-selection-part .left-selection label {
+  color: #393939;
+  font-family: "Ubuntu";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: capitalize;
+}
+.item-inside-accordion input[type="checkbox"] {
+  width: 25px;
+  height: 28px;
+  border-radius: 6px;
+}
+.item-inside-accordion .top-selection-part .right-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.item-inside-accordion .top-selection-part .right-button button {
+  all: unset;
+  cursor: pointer;
+  color: #686868;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114.5%;
+  text-transform: capitalize;
+}
+.item-inside-accordion .top-selection-part .right-button button:first-child {
+  border-right: 2px solid #686868;
+  padding-right: 15px;
+}
+.item-inside-accordion .top-selection-part .right-button button:hover {
+  color: #28a5d8;
+}
+
+.item-inside-accordion .cart-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 25px;
+}
+.item-inside-accordion .cart-content .cart-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+.cart-card .image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 30%;
+}
+.cart-card .image-block input[type="checkbox"] {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  z-index: 5;
+}
+
+.cart-card .image-block img {
+  width: 100%;
+}
+
+.cart-card .quantity {
+  display: flex;
+  align-items: center;
+  width: 154px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #e9e9e9;
+  justify-content: space-between;
+}
+.cart-card .quantity button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 42px;
+  height: 40px;
+  font-size: 24px;
+  background-color: #393939;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cart-card .quantity button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.cart-card .quantity button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.cart-card .quantity p {
+  color: #000;
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 139%;
+}
+
+.cart-card .desc-block {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.cart-card .desc-block p {
+  color: #393939;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.5%;
+  text-transform: capitalize;
+}
+.cart-card .desc-block span {
+  color: #ff9d42;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 139.5%;
+  text-transform: capitalize;
+}
+
+.cart-card .desc-block h5 {
+  color: #393939;
+  font-family: "Ubuntu";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: capitalize;
+}
+.product-block .payment-options {
+  display: flex;
+  flex-direction: column;
+}
+.product-block .payment-options .payment-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px 15px;
+  border-bottom: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+.product-block .payment-options .payment-type fieldset {
+  display: inline-flex;
+  align-items: flex-start;
+  width: 70%;
+  gap: 10px;
+}
+.product-block .payment-options .payment-type fieldset button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+.product-block .payment-options .payment-type fieldset p {
+  color: #393939;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139%;
+  text-transform: lowercase;
+  text-align: left;
+}
+.product-block .payment-options .payment-type .image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  border: 1px solid rgba(57, 57, 57, 0.2);
+}
+.product-block .payment-options .payment-type .image-block img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.price-block .price-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 25px;  
+  border-radius: 6px;
+  background: #f6f6f6;
+}
+.price-block .price-card h5 {
+  color: #393939;
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: uppercase;
+}
+.price-block .price-card .button-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.price-card .amount-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.price-card .amount-block fieldset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-card .amount-block fieldset p {
+  color: #393939;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.price-card .amount-block fieldset h6 {
+  color: #393939;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+  text-transform: uppercase;
+}
+.price-block .theme-accordian-block{
+  padding: 10px;
 }
