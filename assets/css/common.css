@@ -167,7 +167,7 @@ body {
 }
 
 .header-section .center-nav input {
-  padding: 6.6px;
+  padding: 6.5px;
   border: 2px solid silver;
   width: 100%;
   outline: none;
@@ -2148,14 +2148,36 @@ span.divider {
   .sub-input-box input {
     font-size: 24px;
   }
+  .header-section .experince-tab .text-content p{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .sub-header-section{
+    height: 66px;
+  }
+  .sub-input-select select{
+    padding: 12px 10px;
+  }
+  .sub-input-box img {
+    width: 85%;
+    height: 65px;
+  }
+  .sub-input-box input{
+    padding: 18px 10px;
+  }
+  .main-block {
+    padding-top: 172px;
+}
 }
 
 @media screen and (max-width: 1280px) {
   .sub-input-box img {
     width: 100%;
+    height: 50px;
   }
   .sub-input-box input {
     width: 90%;
+    padding: 12px 15px;
   }
   .main-block .section-heading-block .section-heading-text {
     font-size: 36px;
