@@ -3,8 +3,7 @@
 }
 
 .Blog-Page .main-block .common-banner-section .banner-content {
-  padding-top: 56px;
-  padding-bottom: 66px;
+ padding: 40px 0;
 }
 
 .main-block .blog-section {
@@ -351,17 +350,6 @@
 }
 
 @media (max-width: 768px) {
-  .Blog-Page .main-block .common-banner-section .banner-content h2 {
-    font-size: 30px;
-  }
-  .Blog-Page
-    .main-block
-    .common-banner-section
-    .banner-content
-    .breadcrumb
-    .breadcrumb-item {
-    font-size: 18px;
-  }
   .main-block .blog-section .custom-row {
     grid-template-columns: 100%;
     gap: 40px;
@@ -383,9 +371,7 @@
   .blog-section .custom-row .right-content-part .top .dis-text {
     font-size: 18px;
   }
-  .main-block .blog-section {
-    padding: 50px 30px 70px;
-  }
+  
   .Blog-Page
     .main-block
     .common-banner-section

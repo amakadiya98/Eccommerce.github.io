@@ -90,10 +90,10 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .main-block {
-  padding-top: 240px;
+  padding-top: 199px;
 }
 .header-section .experince-tab {
-  padding: 17px;
+  padding: 5px 20px;
   background-color: #28a5d8;
   width: 100%;
 }
@@ -105,12 +105,11 @@ body {
   width: 100%;
 }
 .header-section .experince-tab .text-content img {
-  height: 28px;
+  height: 17px;
 }
 .header-section .experince-tab .text-content p {
-  font-size: 36px;
   font-family: "Ubuntu";
-  font-size: 36px;
+  font-size: 24px;
   font-style: italic;
   line-height: 36px;
   font-weight: 500;
@@ -133,7 +132,7 @@ body {
 .header-section nav {
   display: grid;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   grid-template-columns: 330px 1fr 400px;
   gap: 2rem;
   position: relative;
@@ -380,6 +379,10 @@ body {
 @media (max-width: 1080px) {
   .mobile-hide-icon {
     display: none;
+  }
+  .header-section .logo {
+    width: 250px;
+    height: 59px;
   }
 }
 
@@ -636,13 +639,14 @@ span.divider {
 
 .sub-first-conta {
   background-color: var(--secondary-color);
-  padding: 32px;
+  padding: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   width: 100%;
   padding-left: 0px;
+  height: 100%;
 }
 
 .sub-first-conta img {
@@ -670,8 +674,9 @@ span.divider {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  padding: 15px;
+  padding: 5px;
   gap: 1.5rem;
+  height: 100%;
 }
 
 .sub-second-first {
@@ -710,7 +715,7 @@ span.divider {
 
 .sub-input-select select {
   width: 100%;
-  padding: 23px 10px;
+  padding: 18px 10px;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -726,7 +731,7 @@ span.divider {
 .sub-second-first p {
   color: var(--light-bg);
   background-color: var(--secondary-color);
-  padding: 17px 40px;
+  padding: 10px 40px;
   border-radius: 5px;
 }
 
@@ -737,7 +742,7 @@ span.divider {
 .sub-second-second {
   color: var(--light-bg);
   background-color: var(--secondary-color);
-  padding: 17px 10px;
+  padding: 10px;
   margin-right: 15px;
   display: flex;
   align-items: center;
@@ -1219,7 +1224,7 @@ span.divider {
   background-color: #696767;
 }
 .sub-header-mobile .mobile-sub-first .h-line {
-  height: 71px;
+  height: 55px;
   width: 1px;
   background: #d9d9d9;
 }
@@ -1256,7 +1261,7 @@ span.divider {
   background-color: var(--primary-color);
   color: var(--light-bg);
   width: 168px;
-  height: 58px;
+  height: 45px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
@@ -2230,13 +2235,13 @@ span.divider {
 }
 @media screen and (max-width: 1080px) {
   .main-block {
-    padding-top: 197px;
+    padding-top: 157px;
   }
   .header-section .center-nav fieldset {
     display: none;
   }
   .header-section .experince-tab {
-    padding: 12px;
+    padding: 5px 15px;
   }
   .header-section .experince-tab .text-content p {
     font-size: 20px;
@@ -2497,7 +2502,7 @@ span.divider {
 
 /* product banner */
 .common-banner-section {
-  height: 320px;
+  height: 250px;
   background-size: cover;
 }
 .common-banner-section.searchByRego {
@@ -2522,7 +2527,7 @@ span.divider {
 }
 .common-banner-section .banner-content h2 {
   color: #fff;
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 700;
 }
 .common-banner-section .banner-content p {
@@ -2534,16 +2539,20 @@ span.divider {
   margin: auto;
   margin-top: 16px;
 }
-
+@media (max-width: 1080px) {
+  .common-banner-section .banner-content h2{
+    font-size: 28px;
+  }
+  .common-banner-section .banner-content .breadcrumb .breadcrumb-item{
+    font-size: 14px;
+  }
+  .common-banner-section{
+    height: 200px;
+  }
+}
 @media (max-width: 767px) {
   .common-banner-section .banner-content p {
     max-width: 75%;
-  }
-  .common-banner-section .banner-content .breadcrumb .breadcrumb-item {
-    font-size: 14px;
-  }
-  .common-banner-section .banner-content h2 {
-    font-size: 36px;
   }
 }
 
@@ -2554,7 +2563,10 @@ span.divider {
     padding: 5px 10px;
   }
   .main-block {
-    padding-top: 115px;
+    padding-top: 106px;
+  }
+  .common-banner-section .banner-content{
+    padding: 16px;
   }
 }
 @media (max-width: 500px) {
