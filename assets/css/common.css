@@ -2166,7 +2166,10 @@ span.divider {
     padding: 18px 10px;
   }
   .main-block {
-    padding-top: 172px;
+    padding-top: 168px;
+}
+.header-section .search-result{
+  top: 102px;
 }
 }
 
